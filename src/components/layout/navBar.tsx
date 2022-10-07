@@ -37,7 +37,11 @@ export default function Nav() {
   }
   return (
     <>
-      <Box marginLeft={"-32px"} width={"100vw"} bg={useColorModeValue('gray.100', 'gray.900')} px={{base:2,md:7}}>
+      <Box 
+      marginLeft={"-32px"} 
+      width={"100vw"} 
+      bg="black" 
+      px={{base:2,md:7}}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
         <Menu>
                 <MenuButton
