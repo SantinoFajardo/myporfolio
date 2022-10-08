@@ -17,7 +17,7 @@ import {
   Center,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon,HamburgerIcon} from '@chakra-ui/icons';
-import { MdOutlineMusicOff } from 'react-icons/md';
+import { MdOutlineMusicOff,MdConnectWithoutContact } from 'react-icons/md';
 import {RiMusicFill} from 'react-icons/ri'
 
 const flags = {
@@ -54,7 +54,7 @@ export default function Nav() {
                   >
                 <HamburgerIcon fontSize={"25px"}/>
                 </MenuButton>
-                <MenuList alignItems={'center'}>
+                <MenuList alignItems={'center'} bg="#101010">
                   <MenuItem>About me</MenuItem>
                   <MenuItem>Skills</MenuItem>
                   <MenuItem>Projects</MenuItem>
@@ -62,11 +62,14 @@ export default function Nav() {
                   <MenuItem>Contact me</MenuItem>
                 </MenuList>
               </Menu>
-          <Box>MY PORTFOLIO</Box>
+          <Box ml={"15px"} fontSize={{base:"sm",md:"xl"}} letterSpacing={{base:1,md:7}}>MY PORTFOLIO</Box>
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={"-1"}>
               <Button onClick={changeLenguaje} bg="transparent" _hover={{bg:"transparent"}}>
                 <img height={"30px"} width={"30px"} src={lenguaje == "ES" ? flags.spain : flags.britain}></img>
+              </Button>
+              <Button fontSize={"2xl"} bg='transparent' _hover={{bg:"transparent"}}>
+                  <MdConnectWithoutContact color='#C83333'/>
               </Button>
               <Button
               fontSize={"2xl"}
