@@ -21,10 +21,12 @@ const Home: NextPage = () => {
       </Head>
       <Layout>
       <div className={styles.vline}>
-</div>
+      </div>
         <div className={styles.divMe}>
           <h1>Fajardo Santino</h1>
           <h3>Full-stack developer</h3>
+        </div>
+        <div className={styles.vline2}>
         </div>
           <div className={styles.divTypewriter}>
             <p className={styles.pTypewriter}>
@@ -36,10 +38,14 @@ const Home: NextPage = () => {
              }}/>
             </p>
           </div>
+          <div className={styles.vline3}>
+          </div>
           <div className={styles.divButtonStart}>
             <button className={styles.buttonStart}>
               {lenguajeofPage == "ES" ? traductionOfLanding.buttonStart.ES : traductionOfLanding.buttonStart.EN}
               </button>
+          </div>
+          <div className={styles.vline4}>
           </div>
       </Layout>
     </div>

@@ -47,6 +47,7 @@ export default function Nav() {
   return (
     <>
       <Box 
+      zIndex={100}
       marginLeft={"-32px"} 
       width={"100vw"} 
       bg="black" 
