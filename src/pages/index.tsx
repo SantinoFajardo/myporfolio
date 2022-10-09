@@ -5,8 +5,13 @@ import Layout from '../components/layout/layout'
 import styles from '../styles/Home.module.css'
 import React from 'react'; 
 import Typewriter from "typewriter-effect"
+import Cookies from 'universal-cookie/cjs/Cookies'
+import traductionOfLanding from '../lenguajes/landing'
 
 const Home: NextPage = () => {
+  const Cookie = new Cookies()
+  const typeWriterLenguaje = traductionOfLanding.typewriter
+  let lenguajeofPage = Cookie.get("Lenguaje")
   return (
     <div className={styles.container}>
       <Head>
@@ -15,6 +20,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
+      <div className={styles.vline}>
+</div>
         <div className={styles.divMe}>
           <h1>Fajardo Santino</h1>
           <h3>Full-stack developer</h3>
@@ -24,16 +31,15 @@ const Home: NextPage = () => {
             <Typewriter
             onInit={(typewriter:any)=> {
             typewriter
-             .typeString("Welcome to my portfolio!")
-             .pauseFor(200)
-             .deleteAll()
-             .typeString('Thank you for taking the time to get to know me and see my efforts.')
-             .deleteAll()
-             .typeString("Enough of detours and let's begin!")
+             .typeString(lenguajeofPage == "ES" ? typeWriterLenguaje[0].ES : typeWriterLenguaje[0].EN)
              .start()
-             
              }}/>
             </p>
+          </div>
+          <div className={styles.divButtonStart}>
+            <button className={styles.buttonStart}>
+              {lenguajeofPage == "ES" ? traductionOfLanding.buttonStart.ES : traductionOfLanding.buttonStart.EN}
+              </button>
           </div>
       </Layout>
     </div>

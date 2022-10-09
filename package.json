@@ -24,7 +24,8 @@
     "react-icons": "^4.4.0",
     "react-query": "^3.39.2",
     "typewriter": "^8.0.6",
-    "typewriter-effect": "^2.19.0"
+    "typewriter-effect": "^2.19.0",
+    "universal-cookie": "^4.0.4"
   },
   "devDependencies": {
     "@types/node": "18.8.3",

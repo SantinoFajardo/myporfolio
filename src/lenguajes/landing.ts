@@ -1,14 +1,14 @@
 const traductionOfLanding = {
     typewriter:[
         {
-            ES: 'Bienvenido a mi portafolio!',
-            EN: 'Welcome to my porfolio!'
+            ES: 'Bienvenido a mi portafolio!. Gracias por tu tiempo, espero disfrutes la visita!',
+            EN: 'Welcome to my porfolio!. Thank for your time, I hope enjoy the visit!'
         },
-        {
-            ES:'Gracias por tomarte el tiempo de conocerme a mi y a mis esfuerzos.',
-            EN:'Thank you for taking the time to get to know me and see my efforts.'
-        }
-    ]
+    ],
+    buttonStart:{
+        ES: "COMIENZA",
+        EN: "START"
+    }
 }
 
 export default traductionOfLanding
