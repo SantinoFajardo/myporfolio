@@ -7,6 +7,7 @@ import React from 'react';
 import Typewriter from "typewriter-effect"
 import Cookies from 'universal-cookie/cjs/Cookies'
 import traductionOfLanding from '../lenguajes/landing'
+import AboutMe from '../components/aboutMe'
 
 const Home: NextPage = () => {
   const Cookie = new Cookies()
@@ -47,6 +48,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.vline4}>
           </div>
+          <AboutMe/>
       </Layout>
     </div>
   )
