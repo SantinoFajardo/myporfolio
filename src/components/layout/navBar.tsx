@@ -49,7 +49,7 @@ export default function Nav() {
       <Box 
       zIndex={100}
       marginLeft={"-32px"} 
-      width={"100vw"} 
+      width={"98.7vw"} 
       bg="black" 
       px={{base:2,md:7}}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>

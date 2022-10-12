@@ -8,6 +8,9 @@ import Typewriter from "typewriter-effect"
 import Cookies from 'universal-cookie/cjs/Cookies'
 import traductionOfLanding from '../lenguajes/landing'
 import AboutMe from '../components/aboutMe'
+import {BsGithub,BsLinkedin} from "react-icons/bs"
+import links from '../utils/links'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   const Cookie = new Cookies()
@@ -21,6 +24,27 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
+        <div className={styles.divButtons}>
+          <Link href={links.myCVLink} passHref>
+            <a target={"_blank"}>
+              <button className={styles.resumeButton}>Resume</button>
+            </a>
+          </Link>
+          <Link href={links.myGitHubLink} passHref>
+            <a  target={"_blank"}>
+              <button className={styles.gitHubButton}>
+                <BsGithub fontSize={"30px"}/>
+              </button>
+            </a>
+          </Link>
+          <Link href={links.myLinkedinLink} passHref>
+            <a  target={"_blank"}>
+              <button className={styles.linkedinButton}>
+                <BsLinkedin fontSize={"30px"}/>
+              </button>
+            </a>
+          </Link>
+        </div>
       <div className={styles.vline}>
       </div>
         <div className={styles.divMe}>

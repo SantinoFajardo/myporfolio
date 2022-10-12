@@ -10,6 +10,12 @@
   z-index: 1;
  }
 
+ @media screen and (max-width:527px){
+  .vline{
+    visibility: hidden;
+  }
+ }
+
  @media screen and (max-width:330px){
   .vline{
     visibility: hidden;
@@ -60,6 +66,9 @@
 }
 
 @media screen and (min-width:330px){
+  .vline{
+    height: 170px;
+  }
   .divMe h1{
     margin-top: 50px;
   }
@@ -99,4 +108,39 @@
   .buttonStart{
     margin-top: 10px;
   }
+}
+
+.divButtons{
+  width: 200px;
+  display: flex
+}
+
+.divButtons button{
+  margin: 10px;
+}
+
+.resumeButton{
+  background-color: #AF2626;
+  height: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.gitHubButton{
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.gitHubButton:hover{
+  background-color: #AF2626;
+}
+
+.linkedinButton{
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.linkedinButton:hover{
+  background-color: #AF2626;
 }
