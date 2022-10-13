@@ -16,7 +16,7 @@ import Skills from '../components/skills'
 const Home: NextPage = () => {
   const Cookie = new Cookies()
   const typeWriterLenguaje = traductionOfLanding.typewriter
-  let lenguajeofPage = Cookie.get("Lenguaje")
+  let lenguajeofPage : String = Cookie.get("Lenguaje")
   return (
     <div className={styles.container}>
       <Head>

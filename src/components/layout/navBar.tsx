@@ -43,7 +43,7 @@ export default function Nav() {
     
   }
   Cookie.set('Lenguaje',lenguaje,{path:'/'})
-  let lenguajeofPage = Cookie.get('Lenguaje')
+  let lenguajeofPage : string =  Cookie.get('Lenguaje')
   return (
     <>
       <Box 

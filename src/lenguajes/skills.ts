@@ -1,4 +1,6 @@
-const skillsTraduction = {
+import { skillsTraduction } from "../utils/interfaces/interfaces"
+
+const skillsTraduction : skillsTraduction = {
     title:{
         ES:"HABILIDADES",
         EN:"SKILLS"

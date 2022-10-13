@@ -6,7 +6,7 @@ import technologiesLink from "../utils/technologiesIcons";
 
 const Skills : NextPage = () => {
     const Cookie = new Cookies()
-    let lenguajeofPage = Cookie.get("Lenguaje");
+    let lenguajeofPage : string = Cookie.get("Lenguaje");
     return(
         <div className={s.skillsDiv}>
             <h1 className={s.skillsTitle}>{
