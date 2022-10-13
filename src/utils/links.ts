@@ -1,4 +1,3 @@
-
 const links = {
     myGitHubLink : "https://github.com/SantinoFajardo",
     myLinkedinLink : "https://www.linkedin.com/in/santino-fajardo-810a61235/",
