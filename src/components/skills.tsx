@@ -16,7 +16,13 @@ const Skills : NextPage = () => {
             }</h1>
             <div className={s.divIcons}>
                 <div className={s.flexDivSkills}>
-                    <h2 className={s.titleOfTechnologieType}>FRONTEND</h2>
+                    <h2 className={s.titleOfTechnologieType}>
+                        {
+                            lenguajeofPage == "ES"
+                            ? skillsTraduction.front.ES
+                            : skillsTraduction.front.EN
+                        }
+                    </h2>
                 <div className={s.divIconsFront}>
                     {
                         technologiesLink.Front.map((FL:string)=>(
@@ -36,7 +42,13 @@ const Skills : NextPage = () => {
                 </div>
                 </div>
                 <div className={s.flexDivSkills}>
-                    <h2 className={s.titleOfTechnologieType}>DATA BASES</h2>
+                    <h2 className={s.titleOfTechnologieType}>
+                        {
+                            lenguajeofPage == "ES"
+                            ? skillsTraduction.dataBases.ES
+                            : skillsTraduction.dataBases.EN
+                        }
+                    </h2>
                 <div className={s.divIconsFront}>
                     {
                         technologiesLink.DataBases.map((FL:string)=>(
@@ -46,7 +58,13 @@ const Skills : NextPage = () => {
                 </div>
                 </div>
                 <div className={s.flexDivSkills}>
-                    <h2 className={s.titleOfTechnologieType}>OTHERS</h2>
+                    <h2 className={s.titleOfTechnologieType}>
+                        {
+                            lenguajeofPage == "ES"
+                            ? skillsTraduction.others.ES
+                            : skillsTraduction.others.EN
+                        }
+                    </h2>
                 <div className={s.divIconsFront}>
                     {
                         technologiesLink.Others.map((FL:string)=>(
