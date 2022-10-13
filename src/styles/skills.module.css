@@ -1,0 +1,11 @@
+.skillsDiv{
+    padding-top: 90px;
+    text-align: center;
+    font-family: monospace;
+    height: 500px;
+    /* background-color: blue; */
+}
+
+.skillsTitle{
+    font-size: 2.8em;
+}

@@ -11,6 +11,7 @@ import AboutMe from '../components/aboutMe'
 import {BsGithub,BsLinkedin} from "react-icons/bs"
 import links from '../utils/links'
 import Link from 'next/link'
+import Skills from '../components/skills'
 
 const Home: NextPage = () => {
   const Cookie = new Cookies()
@@ -73,6 +74,7 @@ const Home: NextPage = () => {
           <div className={styles.vline4}>
           </div>
           <AboutMe/>
+          <Skills/>
       </Layout>
     </div>
   )
