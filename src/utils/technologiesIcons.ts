@@ -22,6 +22,14 @@ const technologiesLink = {
                 "https://cdn.iconscout.com/icon/free/png-256/postgresql-226047.png",//POSTGRESQL
                 "https://cdn.iconscout.com/icon/free/png-256/sequelize-2-1175003.png",//SEQUELIZE
                 "https://res.cloudinary.com/spantree-technology-group/image/upload/c_scale,w_256/v1644258944/spantree.net/tool_icons/prisma_ax9pfb.png"//PRISMA
+            ],
+    Others:
+            [
+                "https://www.jorgeagoiz.es/favicon.ico",//VERCEL
+                "https://cdn.iconscout.com/icon/free/png-256/npm-3-1175132.png",//NPM
+                "https://cdn.iconscout.com/icon/free/png-256/figma-3521426-2944870.png",//FIGMA
+                "https://cdn.iconscout.com/icon/free/png-256/jira-3628861-3030001.png",//JIRA
+                "https://www.svgrepo.com/show/354202/postman-icon.svg"//POSTMAN
             ]
 }
 
