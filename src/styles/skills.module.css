@@ -9,3 +9,26 @@
 .skillsTitle{
     font-size: 2.8em;
 }
+
+.divIconsFront{
+    margin-top: 50px;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divIconsFront img{
+    opacity: .3;
+    margin: 10px;
+    transition: translateY, .5s;
+}
+
+.frontendTitle{
+    background-color: red;
+}
+
+.divIconsFront img:hover{
+    transform: translateY(-10px);
+    opacity: 1;
+}
