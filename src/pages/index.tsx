@@ -5,7 +5,7 @@ import Layout from '../components/layout/layout'
 import styles from '../styles/Home.module.css'
 import React from 'react'; 
 import Typewriter from "typewriter-effect"
-import Cookies from 'universal-cookie/cjs/Cookies'
+import Cookies from 'universal-cookie'
 import traductionOfLanding from '../lenguajes/landing'
 import AboutMe from '../components/aboutMe'
 import {BsGithub,BsLinkedin} from "react-icons/bs"
