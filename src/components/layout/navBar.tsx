@@ -72,7 +72,7 @@ export default function Nav() {
                   <MenuItem>Contact me</MenuItem>
                 </MenuList>
               </Menu>
-          <Box paddingLeft={"50px"}  w={275} textAlign="center" fontSize={{base:"sm",sm:"xl"}} letterSpacing={{base:1,md:7}}>{lenguajeofPage == "ES" ? traductionOfNav.title.ES : traductionOfNav.title.EN}</Box>
+          <Box paddingLeft={{md:"65px"} } w={{md:300}} textAlign="center" fontSize={{base:"sm",sm:"xl"}} letterSpacing={{base:1,md:7}}>{lenguajeofPage == "ES" ? traductionOfNav.title.ES : traductionOfNav.title.EN}</Box>
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={"-1"}>
               <Button onClick={changeLenguaje} bg="transparent" _hover={{bg:"transparent"}}>

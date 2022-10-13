@@ -10,7 +10,7 @@
   z-index: 1;
  }
 
- @media screen and (max-width:527px){
+ @media screen and (max-width:767px){
   .vline{
     visibility: hidden;
   }
