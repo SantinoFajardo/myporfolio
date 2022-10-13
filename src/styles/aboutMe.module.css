@@ -25,12 +25,20 @@
 
 .firstParagraph{
     width: 500px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .firstImgDiv{
+    /* width: 500px; */
+    margin-top: 20px;
+    /* background-color: red; */
+    display: grid;
+    place-items: center;
+}
+
+.firstImage{
     width: 500px;
-    margin-top: 65px;
+    height: 200px;
 }
 
 .secondParagraphDiv{
@@ -39,17 +47,20 @@
 
 .secondParagraph{
     width: 500px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .secondImgDiv{
     width: 500px;
     margin-top: 75px;
+    display: grid;
+    place-items: center;
 }
 
 .secondImage{
     border-radius: 50%;
     width: 400px;
+    height: 200px;
 }
 
 @media screen and (max-width:540px) {
@@ -69,7 +80,7 @@
 
 .vline{
     border-left: 3px solid #E42929;
-    height: 60%;
+    height: 50%;
     left: 50%;
     position: absolute;
     z-index: 1;

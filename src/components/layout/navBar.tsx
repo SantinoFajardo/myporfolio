@@ -72,14 +72,11 @@ export default function Nav() {
                   <MenuItem>Contact me</MenuItem>
                 </MenuList>
               </Menu>
-          <Box ml={"15px"} fontSize={{base:"sm",md:"xl"}} letterSpacing={{base:1,md:7}}>{lenguajeofPage == "ES" ? traductionOfNav.title.ES : traductionOfNav.title.EN}</Box>
+          <Box paddingLeft={"50px"}  w={275} textAlign="center" fontSize={{base:"sm",sm:"xl"}} letterSpacing={{base:1,md:7}}>{lenguajeofPage == "ES" ? traductionOfNav.title.ES : traductionOfNav.title.EN}</Box>
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={"-1"}>
               <Button onClick={changeLenguaje} bg="transparent" _hover={{bg:"transparent"}}>
                 <img height={"30px"} width={"30px"} src={lenguajeofPage == "ES" ? flags.spain : flags.britain}></img>
-              </Button>
-              <Button fontSize={"2xl"} bg='transparent' _hover={{bg:"transparent"}}>
-                  <MdConnectWithoutContact color='#C83333'/>
               </Button>
               <Button
               fontSize={"2xl"}
