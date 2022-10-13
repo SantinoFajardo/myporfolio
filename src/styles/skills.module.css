@@ -3,7 +3,6 @@
     text-align: center;
     font-family: monospace;
     height: 500px;
-    /* background-color: blue; */
 }
 
 .skillsTitle{
@@ -19,7 +18,6 @@
 .flexDivSkills{
     width: 600px;
     margin: 30px 0;
-    /* background-color: red; */
 }
 
 .divIconsFront{
@@ -38,7 +36,6 @@
 
 .titleOfTechnologieType{
     font-size: 1.8em;
-    /* background-color: red; */
 }
 
 .divIconsFront img:hover{
