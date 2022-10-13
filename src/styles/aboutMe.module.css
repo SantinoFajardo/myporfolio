@@ -2,7 +2,7 @@
     text-align: center;
     font-family: monospace;
     /* background-color: red; */
-    height: 1000px;
+    /* height: 1000px; */
 }
 
 .aboutMeTitle{
@@ -13,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* overflow: hidden; */
 }
 
 .firstParagraphDiv{
@@ -29,16 +30,53 @@
 
 .firstImgDiv{
     width: 500px;
-    margin-top: 75px;
-    margin-left: 10%;
+    margin-top: 65px;
 }
 
 .secondParagraphDiv{
-    width: 500px;
     margin-top: 50px;
 }
 
 .secondParagraph{
     width: 500px;
     font-size: 1.2em;
+}
+
+.secondImgDiv{
+    width: 500px;
+    margin-top: 75px;
+}
+
+.secondImage{
+    border-radius: 50%;
+    width: 400px;
+}
+
+@media screen and (max-width:540px) {
+    .firstParagraph{
+        width: 90vw;
+    }
+    .secondParagraph{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:1075px) {
+    .firstImgDiv{
+        display: none;
+    }
+}
+
+.vline{
+    border-left: 3px solid #E42929;
+    height: 60%;
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+@media screen and (max-width:1200px){
+    .vline{
+        display: none;
+    }
 }
