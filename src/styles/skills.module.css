@@ -10,9 +10,21 @@
     font-size: 2.8em;
 }
 
+.divIcons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexDivSkills{
+    width: 600px;
+    margin: 30px 0;
+    /* background-color: red; */
+}
+
 .divIconsFront{
-    margin-top: 50px;
-    width: 45%;
+    margin-top: 10px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,8 +36,9 @@
     transition: translateY, .5s;
 }
 
-.frontendTitle{
-    background-color: red;
+.titleOfTechnologieType{
+    font-size: 1.8em;
+    /* background-color: red; */
 }
 
 .divIconsFront img:hover{

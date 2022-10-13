@@ -15,13 +15,45 @@ const Skills : NextPage = () => {
             : skillsTraduction.title.EN
             }</h1>
             <div className={s.divIcons}>
-                    <h2 className={s.frontendTitle}>FRONT-END</h2>
+                <div className={s.flexDivSkills}>
+                    <h2 className={s.titleOfTechnologieType}>FRONTEND</h2>
                 <div className={s.divIconsFront}>
                     {
                         technologiesLink.Front.map((FL:string)=>(
                             <img src={FL} width="70px" height="70px" alt="" />
                         ))
                     }
+                </div>
+                </div>
+                <div className={s.flexDivSkills}>
+                    <h2 className={s.titleOfTechnologieType}>BACKEND</h2>
+                <div className={s.divIconsFront}>
+                    {
+                        technologiesLink.Back.map((FL:string)=>(
+                            <img src={FL} width="70px" height="70px" alt="" />
+                        ))
+                    }
+                </div>
+                </div>
+                <div className={s.flexDivSkills}>
+                    <h2 className={s.titleOfTechnologieType}>DATA BASES</h2>
+                <div className={s.divIconsFront}>
+                    {
+                        technologiesLink.DataBases.map((FL:string)=>(
+                            <img src={FL} width="70px" height="70px" alt="" />
+                        ))
+                    }
+                </div>
+                </div>
+                <div className={s.flexDivSkills}>
+                    <h2 className={s.titleOfTechnologieType}>OTHERS</h2>
+                <div className={s.divIconsFront}>
+                    {
+                        technologiesLink.Others.map((FL:string)=>(
+                            <img src={FL} width="70px" height="70px" alt="" />
+                        ))
+                    }
+                </div>
                 </div>
             </div>
         </div>
