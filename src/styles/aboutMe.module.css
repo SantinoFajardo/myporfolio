@@ -1,8 +1,6 @@
 .divAboutMe{
     text-align: center;
     font-family: monospace;
-    /* background-color: red; */
-    /* height: 1000px; */
 }
 
 .aboutMeTitle{
@@ -13,14 +11,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* overflow: hidden; */
 }
 
 .firstParagraphDiv{
     width: 500px;
     margin-top: 50px;
-    /* margin-left: 5%; */
-    /* border: 1px solid black; */
 }
 
 .firstParagraph{
@@ -29,9 +24,7 @@
 }
 
 .firstImgDiv{
-    /* width: 500px; */
     margin-top: 20px;
-    /* background-color: red; */
     display: grid;
     place-items: center;
 }
