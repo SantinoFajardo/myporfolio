@@ -1,0 +1,34 @@
+.divAboutMe{
+    text-align: center;
+    font-family: monospace;
+    /* background-color: red; */
+    height: 1000px;
+}
+
+.aboutMeTitle{
+    font-size: 2.8em;
+}
+
+.aboutMeFlexDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.firstParagraphDiv{
+    width: 500px;
+    margin-top: 50px;
+    /* margin-left: 5%; */
+    /* border: 1px solid black; */
+}
+
+.firstParagraph{
+    width: 500px;
+    font-size: 1.2em;
+}
+
+.firstImgDiv{
+    width: 500px;
+    margin-top: 75px;
+    margin-left: 10%;
+}
