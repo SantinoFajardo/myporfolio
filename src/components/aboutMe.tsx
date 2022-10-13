@@ -24,6 +24,13 @@ const AboutMe: NextPage = () => {
       <div className={s.firstImgDiv}>
         <img src="https://mirazarate.com.ar/wp-content/uploads/2019/05/cnz-1-696x392.jpeg" alt="" className={s.firstImage}/>
       </div>
+      <div className={s.secondParagraphDiv}>
+          <p className={s.secondParagraph}>
+            {lenguajeofPage == "ES"
+            ? traductionOfAboutMe.secondParagraph.ES
+            : traductionOfAboutMe.secondParagraph.EN}
+          </p>
+        </div>
       </div>
     </div>
   );

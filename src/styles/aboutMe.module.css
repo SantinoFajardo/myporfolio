@@ -32,3 +32,13 @@
     margin-top: 75px;
     margin-left: 10%;
 }
+
+.secondParagraphDiv{
+    width: 500px;
+    margin-top: 50px;
+}
+
+.secondParagraph{
+    width: 500px;
+    font-size: 1.2em;
+}
