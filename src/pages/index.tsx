@@ -12,6 +12,7 @@ import {BsGithub,BsLinkedin} from "react-icons/bs"
 import links from '../utils/links'
 import Link from 'next/link'
 import Skills from '../components/skills'
+import Projects from '../components/MyProjects'
 
 const Home: NextPage = () => {
   const Cookie = new Cookies()
@@ -75,6 +76,7 @@ const Home: NextPage = () => {
           </div>
           <AboutMe/>
           <Skills/>
+          <Projects/>
       </Layout>
     </div>
   )
