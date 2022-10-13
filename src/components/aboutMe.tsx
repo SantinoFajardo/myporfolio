@@ -7,7 +7,7 @@ const AboutMe: NextPage = () => {
   const Cookie = new Cookies();
   let lenguajeofPage = Cookie.get("Lenguaje");
   return (
-    <div className={s.divAboutMe}>
+    <div id="aboutMe" className={s.divAboutMe}>
       <h1 className={s.aboutMeTitle}>
         {lenguajeofPage == "ES"
           ? traductionOfAboutMe.title.ES

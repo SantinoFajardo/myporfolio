@@ -39,10 +39,9 @@ export default function Nav() {
   }
   const changeLenguaje = () => {
     setLenguaje(lenguaje == "ES" ? "EN" : "ES")
+    Cookie.set('Lenguaje',lenguaje,{path:'/'})
     router.push('/')
-    
   }
-  Cookie.set('Lenguaje',lenguaje,{path:'/'})
   let lenguajeofPage : string =  Cookie.get('Lenguaje')
   return (
     <>
@@ -75,8 +74,8 @@ export default function Nav() {
                 <HamburgerIcon fontSize={"25px"}/>
                 </MenuButton>
                 <MenuList alignItems={'center'} bg="#101010">
-                  <MenuItem>About me</MenuItem>
-                  <MenuItem>Skills</MenuItem>
+                  <MenuItem><a href='#aboutMe'>About me</a></MenuItem>
+                  <MenuItem><a href='#skills'>Skills</a></MenuItem>
                   <MenuItem>Projects</MenuItem>
                   <MenuItem>Experience</MenuItem>
                   <MenuItem>Contact me</MenuItem>

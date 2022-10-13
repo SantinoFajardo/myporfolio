@@ -8,7 +8,7 @@ const Skills : NextPage = () => {
     const Cookie = new Cookies()
     let lenguajeofPage : string = Cookie.get("Lenguaje");
     return(
-        <div className={s.skillsDiv}>
+        <div id="skills" className={s.skillsDiv}>
             <h1 className={s.skillsTitle}>{
             lenguajeofPage == "ES" 
             ? skillsTraduction.title.ES 
