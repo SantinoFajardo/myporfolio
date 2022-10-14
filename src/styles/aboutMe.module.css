@@ -1,86 +1,89 @@
-.divAboutMe{
-    text-align: center;
-    font-family: monospace;
+.divAboutMe {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  font-family: monospace;
 }
 
-.aboutMeTitle{
-    font-size: 2.8em;
+.aboutMeTitle {
+  font-size: 2.8em;
 }
 
-.aboutMeFlexDiv{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.aboutMeFlexDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1490px;
 }
 
-.firstParagraphDiv{
-    width: 500px;
-    margin-top: 50px;
+.firstParagraphDiv {
+  width: 500px;
+  margin-top: 50px;
 }
 
-.firstParagraph{
-    width: 500px;
-    font-size: 1em;
+.firstParagraph {
+  width: 500px;
+  font-size: 1em;
 }
 
-.firstImgDiv{
-    margin-top: 20px;
-    display: grid;
-    place-items: center;
+.firstImgDiv {
+  margin-top: 20px;
+  display: grid;
+  place-items: center;
 }
 
-.firstImage{
-    width: 500px;
-    height: 200px;
+.firstImage {
+  width: 500px;
+  height: 200px;
 }
 
-.secondParagraphDiv{
-    margin-top: 50px;
+.secondParagraphDiv {
+  margin-top: 50px;
 }
 
-.secondParagraph{
-    width: 500px;
-    font-size: 1em;
+.secondParagraph {
+  width: 500px;
+  font-size: 1em;
 }
 
-.secondImgDiv{
-    width: 500px;
-    margin-top: 75px;
-    display: grid;
-    place-items: center;
+.secondImgDiv {
+  width: 500px;
+  margin-top: 75px;
+  display: grid;
+  place-items: center;
 }
 
-.secondImage{
-    border-radius: 50%;
-    width: 400px;
-    height: 200px;
+.secondImage {
+  border-radius: 50%;
+  width: 400px;
+  height: 200px;
 }
 
-@media screen and (max-width:540px) {
-    .firstParagraph{
-        width: 90vw;
-    }
-    .secondParagraph{
-        width: 90vw;
-    }
+@media screen and (max-width: 540px) {
+  .firstParagraph {
+    width: 90vw;
+  }
+  .secondParagraph {
+    width: 90vw;
+  }
 }
 
-@media screen and (max-width:1075px) {
-    .firstImgDiv{
-        display: none;
-    }
+@media screen and (max-width: 1075px) {
+  .firstImgDiv {
+    display: none;
+  }
 }
 
-.vline{
-    border-left: 3px solid #E42929;
-    height: 670px;
-    left: 50%;
-    position: absolute;
-    z-index: 1;
+.vline {
+  border-left: 3px solid #e42929;
+  height: 670px;
+  left: 50%;
+  position: absolute;
+  z-index: 0;
 }
 
-@media screen and (max-width:1200px){
-    .vline{
-        display: none;
-    }
+@media screen and (max-width: 1200px) {
+  .vline {
+    display: none;
+  }
 }
