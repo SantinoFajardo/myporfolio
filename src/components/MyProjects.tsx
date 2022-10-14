@@ -1,7 +1,7 @@
 import { NextPage } from "next";
-import Carousel from "./carrousel";
 import s from "../styles/projects.module.css"
 import Cookies from "universal-cookie";
+import SimpleSlider from "./carrousel";
 
 const Projects : NextPage = () =>{
     const Cookie = new Cookies()
@@ -15,7 +15,7 @@ const Projects : NextPage = () =>{
                     : "PROJECTS"
                 }
                 </h1>
-            <Carousel/>
+            <SimpleSlider/>
         </div>
     )
 }
