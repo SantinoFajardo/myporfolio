@@ -1,0 +1,24 @@
+.projectsDiv{
+    background-color: red;
+    text-align: center;
+    font-family: monospace;
+}
+
+.projectsTitle{
+    font-size: 2.8em;
+}
+
+.divCarrousel{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+.currentProjectDiv{
+    width: 80%;
+    background-color: green;
+}
+
+.previousButton{
+    /* margin-top: ; */
+}

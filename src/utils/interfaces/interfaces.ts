@@ -16,3 +16,16 @@ export type skillsTraduction = {
         EN: String
     }
 }
+
+export type PF = {
+    title : string,
+    description: string,
+    image: string
+    technologies: string[]
+}
+
+export type PI = {
+    title : string,
+    description: string,
+    image: string
+}

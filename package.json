@@ -27,6 +27,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-slideshow-image": "^4.0.5",
     "reactstrap": "^9.1.4",
+    "styled-components": "^5.3.6",
     "typewriter": "^8.0.6",
     "typewriter-effect": "^2.19.0",
     "universal-cookie": "^4.0.4"
