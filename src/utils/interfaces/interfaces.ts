@@ -1,35 +1,29 @@
 export type skillsTraduction = {
-    title: {
-        ES: String,
-        EN: String
-    }
-    front: {
-        ES: String,
-        EN: String
-    }
-    dataBases: {
-        ES: String,
-        EN: String
-    }
-    others: {
-        ES: String,
-        EN: String
-    }
-}
+  title: {
+    ES: String;
+    EN: String;
+  };
+  front: {
+    ES: String;
+    EN: String;
+  };
+  dataBases: {
+    ES: String;
+    EN: String;
+  };
+  others: {
+    ES: String;
+    EN: String;
+  };
+};
 
-export type PF = {
-    title : string,
-    descriptionES: string,
-    descriptionEN:string
-    image: string
-    technologies: string[]
-    deploy?:string
-}
-
-export type PI = {
-    title : string,
-    descriptionES: string,
-    descriptionEN:string
-    image: string
-    technologies: string[]
-}
+export type PROJECT = {
+  title: string;
+  descriptionES: string;
+  descriptionEN: string;
+  video: string;
+  technologies: string[];
+  deploy?: string;
+  repository: string;
+  props?: any;
+};

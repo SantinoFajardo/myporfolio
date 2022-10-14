@@ -1,0 +1,15 @@
+.divCard {
+  height: 80vh;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.buttonDeploy {
+  background-color: #af2626;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100px;
+  margin-top: 10px;
+}
