@@ -1,11 +1,8 @@
-.projectsDiv{
-    /* background-color: red; */
-    /* margin-top: 50px; */
-    /* height: 500px; */
-    text-align: center;
-    font-family: monospace;
+.projectsDiv {
+  text-align: center;
+  font-family: monospace;
 }
 
-.projectsTitle{
-    font-size: 2.8em;
+.projectsTitle {
+  font-size: 2.8em;
 }
