@@ -1,9 +1,11 @@
 import { PF,PI } from "./interfaces/interfaces"
 import technologiesLink from "./technologiesIcons"
 
-const PF : PF = {    title: "World Travelers",
+const PF : PF = {   
+     title: "World Travelers",
     image:"https://res.cloudinary.com/santino/image/upload/v1665663062/worldTravelers/logolargonight_vzbwzl.png",
-    description:"PF DE HENRY",
+    descriptionES:"En este proyecto buscamos crear una comunidad de viajeros, donde un usuario puediera registrarse, crear viajes, unirse a viajes, pagar viajes, dar feedbacks a las actividades en las que estuvo presente y poder comunicarse a traves de un chat con otros viajeros. Como usuario adminisitrador, puede modificar viajes, crear actividades turisticas y modificar los comentarios y perfiles de los usuariso",
+    descriptionEN:"In this project we seek to create a community of travelers, where a user can register, create trips, join trips, pay for trips, give feedback to the activities in which he was present and be able to communicate through a chat with other travelers. As an administrator user, you can modify trips, create tourist activities and modify user comments and profiles.",
     technologies:[
         technologiesLink.Front[0],
         technologiesLink.Front[1],
@@ -16,12 +18,14 @@ const PF : PF = {    title: "World Travelers",
         technologiesLink.DataBases[2],
         "https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png",
         "https://raw.githubusercontent.com/github/explore/master/topics/mongoose/mongoose.png"
-    ]
+    ],
+    deploy:"https://worldtravelers-app.herokuapp.com/"
 }
 const PI : PI = {
     title: "PI HENRY",
     image:"",
-    description:"PI de Henry",
+    descriptionES:"En este projecto individual, debia cumplir con los requisitos dados por Henry. Crear una SPA donde en ella haya filtros combinados, CSS PURO, formularios controlados y mezclar datos de una API externa con datos provenientes de la base de datos. Tampoco podia usar otra tecnologia que no sean las vistas debajo.",
+    descriptionEN:"In this individual project, he had to fulfill the requirements given by Henry. Create a SPA where there are combined filters, PURE CSS, controlled forms and mix data from an external API with data from the database. He also couldn't use technology other than the ones seen below.",
     technologies:[
         technologiesLink.Front[0],
         technologiesLink.Front[1],
@@ -35,6 +39,6 @@ const PI : PI = {
     ]
     }
 
-const projects : Object[] = [PF,PI]
+const projects : any = [PF,PI]
 
 export default projects

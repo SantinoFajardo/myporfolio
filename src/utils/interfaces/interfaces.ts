@@ -19,14 +19,17 @@ export type skillsTraduction = {
 
 export type PF = {
     title : string,
-    description: string,
+    descriptionES: string,
+    descriptionEN:string
     image: string
     technologies: string[]
+    deploy?:string
 }
 
 export type PI = {
     title : string,
-    description: string,
+    descriptionES: string,
+    descriptionEN:string
     image: string
     technologies: string[]
 }

@@ -2,9 +2,13 @@ import { NextPage } from "next";
 import { useState } from "react";
 import projects from "../utils/projects";
 import s from "../styles/projects.module.css"
-import {FaHandPointRight,FaHandPointLeft} from 'react-icons/fa'
+import {AiFillRightCircle,AiFillLeftCircle} from 'react-icons/ai'
+import Cookies from "universal-cookie";
+import Link from "next/link";
 
 const Carrousel : NextPage = () => {
+    const Cookie = new Cookies()
+    let lenguajeofPage : String = Cookie.get("Lenguaje")
     const [carrouselIndex, setCarrouselIndex] = useState(0)
     const [selectedProject, setSelectedProject] = useState(projects[0])
 
@@ -19,16 +23,37 @@ const Carrousel : NextPage = () => {
     }
     return(
         <div className={s.divCarrousel}>
-            <FaHandPointLeft className={s.previousButton} onClick={previous}/>
+            <AiFillLeftCircle className={s.previousButton} onClick={previous}/>
            {
             <div className={s.currentProjectDiv}>
                 {
                     projects[carrouselIndex].image 
-                    ? <img width={"500px"} src={projects[carrouselIndex].image} alt="" /> 
-                    : <h1 className={s.ProjectName}><b>{projects[carrouselIndex].title}</b></h1>
+                    ?   <Link 
+                        href={projects[carrouselIndex].deploy && projects[carrouselIndex].deploy}         passHref
+                        >
+                            <a target={"_blank"}>
+                                <img 
+                                width={"500px"} 
+                                className={s.imageOfProject} 
+                                src={projects[carrouselIndex].image} 
+                                alt="Project image" 
+                                />
+                            </a>
+                        </Link>
+                    : <a><h1 className={s.ProjectName}><b>{projects[carrouselIndex].title}</b></h1></a>
                 }
-                <p className={s.projectDescription}>Description: {projects[carrouselIndex].description}</p>
-                    <h3 className={s.projectTechnologies}>Technologies:</h3>
+                <p className={s.projectDescription}><b>Description:</b> {
+                    lenguajeofPage == "ES" 
+                    ? projects[carrouselIndex].descriptionES
+                    : projects[carrouselIndex].descriptionEN
+                }</p>
+                    <h3 className={s.projectTechnologies}>
+                        {
+                            lenguajeofPage == "ES"
+                            ? "TECNOLOGIAS USADAS:"
+                            : "USED TECHNOLOGIES:"
+                        }
+                        </h3>
                 <div className={s.flexDivTechnologiesProject} style={{display:"flex", justifyContent:"center"}}>
                 {
                     projects[carrouselIndex].technologies.map((T:string)=>(
@@ -38,7 +63,7 @@ const Carrousel : NextPage = () => {
                 </div>
             </div>
            }
-           <FaHandPointRight className={s.nextButton} onClick={next}/>
+           <AiFillRightCircle className={s.nextButton} onClick={next}/>
         </div>
     )
 }
