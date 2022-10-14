@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import { useState } from "react";
 import projects from "../utils/projects";
 import s from "../styles/projects.module.css"
-import { GrNext,GrPrevious } from "react-icons/gr"
+import {FaHandPointRight,FaHandPointLeft} from 'react-icons/fa'
 
 const Carrousel : NextPage = () => {
     const [carrouselIndex, setCarrouselIndex] = useState(0)
@@ -19,22 +19,26 @@ const Carrousel : NextPage = () => {
     }
     return(
         <div className={s.divCarrousel}>
-            <GrPrevious className={s.previousButton} onClick={previous}/>
+            <FaHandPointLeft className={s.previousButton} onClick={previous}/>
            {
             <div className={s.currentProjectDiv}>
-                <h1>{projects[carrouselIndex].title}</h1>
-                <p>{projects[carrouselIndex].description}</p>
-                <div style={{display:"flex", justifyContent:"center"}}>
-                    Technologies:
+                {
+                    projects[carrouselIndex].image 
+                    ? <img width={"500px"} src={projects[carrouselIndex].image} alt="" /> 
+                    : <h1 className={s.ProjectName}><b>{projects[carrouselIndex].title}</b></h1>
+                }
+                <p className={s.projectDescription}>Description: {projects[carrouselIndex].description}</p>
+                    <h3 className={s.projectTechnologies}>Technologies:</h3>
+                <div className={s.flexDivTechnologiesProject} style={{display:"flex", justifyContent:"center"}}>
                 {
                     projects[carrouselIndex].technologies.map((T:string)=>(
-                        <img height={"20px"} width="20px" src={T} alt="" />
+                        <img height={"40px"} width="40px" src={T} alt="" />
                     ))
                 }
                 </div>
             </div>
            }
-           <GrNext className={s.nextButton} onClick={next}/>
+           <FaHandPointRight className={s.nextButton} onClick={next}/>
         </div>
     )
 }

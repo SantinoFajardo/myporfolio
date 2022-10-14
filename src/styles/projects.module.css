@@ -1,5 +1,6 @@
 .projectsDiv{
-    background-color: red;
+    /* background-color: red; */
+    height: 500px;
     text-align: center;
     font-family: monospace;
 }
@@ -8,17 +9,67 @@
     font-size: 2.8em;
 }
 
-.divCarrousel{
-    display: flex;
-    justify-content: center;
-    background-color: blue;
+.nextButton{
+    font-size: 2em;
+    color: white;
+    transition: .5s;
 }
 
-.currentProjectDiv{
-    width: 80%;
-    background-color: green;
+.nextButton:hover{
+    cursor: pointer;
+}
+
+.nextButton:active{
+    transform: scale(.5);
 }
 
 .previousButton{
-    /* margin-top: ; */
+    font-size: 2em;
+    color: white;
+    transition: .5s;
+}
+
+.previousButton:hover{
+    cursor: pointer;
+}
+
+.previousButton:active{
+    transform: scale(.5);
+}
+
+.divCarrousel{
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.currentProjectDiv{
+    display: grid;
+    place-items: center;
+    width: 80%;
+    /* background-color: green; */
+}
+
+.ProjectName{
+    font-size: 2.5em;
+    border-bottom: 1px solid white;
+}
+
+.projectDescription{
+    font-size: 1.5em;
+}
+
+.projectTechnologies{
+    font-size: 1.5em;
+}
+
+.flexDivTechnologiesProject img{
+    opacity: .3;
+    margin: 5px;
+    transition: translateY, .5s;
+}
+
+.flexDivTechnologiesProject img:hover{
+    transform: translateY(-10px);
+    opacity: 1;
 }

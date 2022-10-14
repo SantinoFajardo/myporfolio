@@ -28,4 +28,5 @@ export type PI = {
     title : string,
     description: string,
     image: string
+    technologies: string[]
 }
