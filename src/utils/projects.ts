@@ -3,8 +3,9 @@ import technologiesLink from "./technologiesIcons";
 
 const PF: PROJECT = {
   title: "World Travelers",
-  video:
-    "https://drive.google.com/file/d/1VbDI0QeeqYwLHJwWd0SzmEl2MCLYZHtK/view?usp=sharing",
+  image:
+    "https://res.cloudinary.com/santino/video/upload/v1665663044/worldTravelers/videolandingpagecrop_jlaq6g.mp4",
+  video: "",
   descriptionES:
     "En este proyecto buscamos crear una comunidad de viajeros, donde un usuario puediera registrarse, crear viajes, unirse a viajes, pagar viajes, dar feedbacks a las actividades en las que estuvo presente y poder comunicarse a traves de un chat con otros viajeros. Como usuario adminisitrador, puede modificar viajes, crear actividades turisticas y modificar los comentarios y perfiles de los usuariso",
   descriptionEN:
@@ -27,6 +28,7 @@ const PF: PROJECT = {
 };
 const PI: PROJECT = {
   title: "PI HENRY",
+  image: "https://assets.soyhenry.com/LOGO-REDES-01_og.jpg",
   video: "",
   descriptionES:
     "En este projecto individual, debia cumplir con los requisitos dados por Henry. Crear una SPA donde en ella haya filtros combinados, CSS PURO, formularios controlados y mezclar datos de una API externa con datos provenientes de la base de datos. Tampoco podia usar otra tecnologia que no sean las vistas debajo.",

@@ -19,9 +19,10 @@ export type skillsTraduction = {
 
 export type PROJECT = {
   title: string;
+  image: string;
   descriptionES: string;
   descriptionEN: string;
-  video: string;
+  video?: string;
   technologies: string[];
   deploy?: string;
   repository: string;

@@ -4,6 +4,30 @@
 
 .title {
   font-size: 2em;
+  text-align: center;
+}
+
+.gitHubIcon {
+  margin-top: -40px;
+  margin-left: 10%;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.gitHubIcon:hover {
+  background-color: #af2626;
+}
+
+@media screen and (max-width: 490px) {
+  .head {
+    display: grid;
+    place-items: center;
+  }
+
+  .gitHubIcon {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 .buttonDeploy {

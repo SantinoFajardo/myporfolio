@@ -1,11 +1,19 @@
 import Link from "next/link";
 import { PROJECT } from "../../utils/interfaces/interfaces";
 import s from "../../styles/projectCard.module.css";
+import { BsGithub } from "react-icons/bs";
 
 const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
   return (
     <div className={s.divCard}>
-      <h1 className={s.title}>{props.title}</h1>
+      <div className={s.head}>
+        <h1 className={s.title}>{props.title}</h1>
+        <Link href={props.repository} passHref>
+          <a target={"_blank"}>
+            <BsGithub className={s.gitHubIcon} fontSize={"40px"} />
+          </a>
+        </Link>
+      </div>
       {props.deploy && (
         <Link href={props.deploy} passHref>
           <a target={"_blank"}>
@@ -13,6 +21,15 @@ const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
           </a>
         </Link>
       )}
+      <div>
+        {props.video ? (
+          <video autoPlay>
+            <source src={props.video} type="video/mp4" />
+          </video>
+        ) : (
+          <img width={"40%"} src={props.image} alt="" />
+        )}
+      </div>
     </div>
   );
 };
