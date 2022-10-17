@@ -1,6 +1,7 @@
 .divCard {
   height: 80vh;
   padding: 0 50px;
+  background-color: red;
 }
 
 .title {
@@ -46,4 +47,20 @@
 
 .videoProject {
   margin-top: 20px;
+}
+
+.flexDivTechnologiesProjects {
+  display: flex;
+  justify-content: center;
+}
+
+.flexDivTechnologiesProjects img {
+  opacity: 0.3;
+  margin: 10px;
+  transition: translateY, 0.5s;
+}
+
+.flexDivTechnologiesProjects img:hover {
+  transform: translateY(-10px);
+  opacity: 1;
 }
