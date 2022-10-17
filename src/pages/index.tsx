@@ -77,12 +77,14 @@ const Home: NextPage = () => {
         <div className={styles.vline3}></div>
         <div className={styles.divButtonStart}>
           <button className={styles.buttonStart}>
-            {lenguajeofPage == "ES"
-              ? traductionOfLanding.buttonStart.ES
-              : traductionOfLanding.buttonStart.EN}
+            <a href="#aboutMe">
+              {lenguajeofPage == "ES"
+                ? traductionOfLanding.buttonStart.ES
+                : traductionOfLanding.buttonStart.EN}
+            </a>
           </button>
         </div>
-        <div className={styles.vline4}></div>
+        <div id="aboutMe" className={styles.vline4}></div>
         <AboutMe />
         <Skills />
         <Projects />
