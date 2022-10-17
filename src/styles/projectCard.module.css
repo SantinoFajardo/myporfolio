@@ -1,5 +1,6 @@
 .divCard {
   height: 80vh;
+  padding: 0 50px;
 }
 
 .title {
@@ -36,4 +37,13 @@
   border-radius: 10px;
   width: 100px;
   margin-top: 10px;
+}
+
+.divLeft {
+  width: 45%;
+  /* background-color: red; */
+}
+
+.videoProject {
+  margin-top: 20px;
 }

@@ -10,7 +10,7 @@ const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
         <h1 className={s.title}>{props.title}</h1>
         <Link href={props.repository} passHref>
           <a target={"_blank"}>
-            <BsGithub className={s.gitHubIcon} fontSize={"40px"} />
+            <BsGithub className={s.gitHubIcon} fontSize={"50px"} />
           </a>
         </Link>
       </div>
@@ -21,19 +21,20 @@ const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
           </a>
         </Link>
       )}
-      <div>
+      <div className={s.divLeft}>
         {props.video ? (
-          <video className={s.videoProject} width={"40%"} autoPlay>
+          <video className={s.videoProject} width={"100%"} autoPlay>
             <source src={props.video} type="video/mp4" />
           </video>
         ) : (
           <img
-            className={s.imageProject}
-            width={"40%"}
+            className={s.videoProject}
+            width={"100%"}
             src={props.image}
             alt=""
           />
         )}
+        <h3>TECHNOLOGIES:</h3>
       </div>
     </div>
   );
