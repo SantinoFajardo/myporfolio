@@ -51,8 +51,40 @@
 
 .leftRightDiv {
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   /* background-color: red; */
+}
+
+@media screen and (max-width: 965px) {
+  .divCard {
+    height: 100%;
+    background-color: red;
+  }
+
+  .divRight {
+    background-color: green;
+    width: 100%;
+    margin-left: -10px;
+    display: block;
+  }
+
+  .leftRightDiv {
+    /* background-color: blue; */
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .description {
+    background-color: yellow;
+  }
+  .videoProject {
+    width: 100%;
+  }
+
+  .divLeft {
+    width: 100%;
+  }
 }
 
 .flexDivTechnologiesProjects img {
