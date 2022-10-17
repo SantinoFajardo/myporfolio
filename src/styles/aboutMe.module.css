@@ -1,6 +1,7 @@
 .divAboutMe {
   text-align: center;
   font-family: monospace;
+  color: white;
 }
 
 @media screen and (min-width: 530px) {

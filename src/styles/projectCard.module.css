@@ -1,6 +1,8 @@
 .divCard {
   height: 70vh;
   padding: 0 50px;
+  color: white;
+  font-family: monospace;
 }
 
 .title {
