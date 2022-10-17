@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import projects from "../utils/projects";
 import Cookies from "universal-cookie";
 import ProjectCard from "./cards/projectCard";
-import { PROJECT } from "../utils/interfaces/interfaces";
+import { PROJECT } from "../utils/interfaces";
 import s from "../styles/projectCard.module.css";
 
 const settings = {
