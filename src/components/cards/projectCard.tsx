@@ -25,6 +25,7 @@ const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
         <div className={s.divLeft}>
           {props.video ? (
             <video
+              loop
               muted={true}
               className={s.videoProject}
               width={"100%"}
