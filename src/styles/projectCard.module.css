@@ -51,9 +51,7 @@
 
 .leftRightDiv {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
-  /* background-color: red; */
 }
 
 @media screen and (max-width: 965px) {
@@ -70,14 +68,10 @@
   }
 
   .leftRightDiv {
-    /* background-color: blue; */
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  /* .description {
-    background-color: yellow;
-  } */
   .videoProject {
     width: 100%;
   }
@@ -100,11 +94,9 @@
 
 .divRight {
   margin-left: 10px;
-  /* width: 50%; */
   margin-top: 20px;
   display: grid;
   place-items: center;
-  /* background-color: blue; */
 }
 
 @media screen and (min-width: 966px) {
