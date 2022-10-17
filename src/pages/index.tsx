@@ -14,6 +14,7 @@ import Link from "next/link";
 import Skills from "../components/skills";
 import Projects from "../components/MyProjects";
 import { ScrollContainer, ScrollPage } from "react-scroll-motion";
+import Contact from "../components/contactMe";
 
 const Home: NextPage = () => {
   const Cookie = new Cookies();
@@ -81,6 +82,7 @@ const Home: NextPage = () => {
         <AboutMe />
         <Skills />
         <Projects />
+        <Contact />
       </Layout>
     </div>
   );
