@@ -57,11 +57,9 @@
 @media screen and (max-width: 965px) {
   .divCard {
     height: 100%;
-    background-color: red;
   }
 
   .divRight {
-    background-color: green;
     width: 100vw;
     margin-left: -10px;
     display: block;
