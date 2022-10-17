@@ -1,7 +1,6 @@
 .divCard {
   height: 80vh;
   padding: 0 50px;
-  background-color: red;
 }
 
 .title {
@@ -41,17 +40,19 @@
 }
 
 .divLeft {
-  width: 45%;
-  /* background-color: red; */
-}
-
-.videoProject {
+  width: 50%;
   margin-top: 20px;
 }
 
 .flexDivTechnologiesProjects {
   display: flex;
   justify-content: center;
+}
+
+.leftRightDiv {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
 }
 
 .flexDivTechnologiesProjects img {
@@ -63,4 +64,13 @@
 .flexDivTechnologiesProjects img:hover {
   transform: translateY(-10px);
   opacity: 1;
+}
+
+.divRight {
+  margin-left: 10px;
+  width: 50%;
+  margin-top: 20px;
+  display: grid;
+  place-items: center;
+  /* background-color: blue; */
 }

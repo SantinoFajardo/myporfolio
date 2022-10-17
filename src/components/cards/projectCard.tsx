@@ -21,26 +21,31 @@ const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
           </a>
         </Link>
       )}
-      <div className={s.divLeft}>
-        {props.video ? (
-          <video className={s.videoProject} width={"100%"} autoPlay>
-            <source src={props.video} type="video/mp4" />
-          </video>
-        ) : (
-          <img
-            className={s.videoProject}
-            width={"100%"}
-            src={props.image}
-            alt=""
-          />
-        )}
-        <h3>TECHNOLOGIES:</h3>
-        <div className={s.flexDivTechnologiesProjects}>
-          {props.technologies.map((T: string) => (
-            <div>
-              <img width={"40px"} src={T} alt="" />
-            </div>
-          ))}
+      <div className={s.leftRightDiv}>
+        <div className={s.divLeft}>
+          {props.video ? (
+            <video className={s.videoProject} width={"100%"} autoPlay>
+              <source src={props.video} type="video/mp4" />
+            </video>
+          ) : (
+            <img
+              className={s.videoProject}
+              width={"100%"}
+              src={props.image}
+              alt=""
+            />
+          )}
+        </div>
+        <div className={s.divRight}>
+          {props.descriptionEN}
+          <h3>TECHNOLOGIES:</h3>
+          <div className={s.flexDivTechnologiesProjects}>
+            {props.technologies.map((T: string) => (
+              <div>
+                <img width={"40px"} src={T} alt="" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
