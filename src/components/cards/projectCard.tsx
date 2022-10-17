@@ -57,7 +57,7 @@ const ProjectCard: any = ({ props }: PROJECT) => {
           <div className={s.flexDivTechnologiesProjects}>
             {props.technologies.map((T: string, i: number) => (
               <div key={i}>
-                <Image
+                <img
                   width="40px"
                   height={"40px"}
                   className={s.techImg}

@@ -44,7 +44,7 @@
 
 .vline {
   border-left: 3px solid #e42929;
-  height: 480px;
+  height: 350px;
   left: 50%;
   position: absolute;
   z-index: 0;
