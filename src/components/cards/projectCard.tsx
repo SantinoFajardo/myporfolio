@@ -2,8 +2,11 @@ import Link from "next/link";
 import { PROJECT } from "../../utils/interfaces/interfaces";
 import s from "../../styles/projectCard.module.css";
 import { BsGithub } from "react-icons/bs";
+import Cookies from "universal-cookie";
 
-const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
+const ProjectCard: any = ({ props }: PROJECT) => {
+  const Cookie = new Cookies();
+  let lenguageOfPage: string = Cookie.get("Lenguaje");
   return (
     <div className={s.divCard}>
       <div className={s.head}>
@@ -45,8 +48,10 @@ const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
           )}
         </div>
         <div className={s.divRight}>
-          <p className={s.description}>{props.descriptionEN}</p>
-          <h3>TECHNOLOGIES:</h3>
+          <p className={s.description}>
+            {lenguageOfPage == "ES" ? props.descriptionES : props.descriptionEN}
+          </p>
+          <h3>{lenguageOfPage == "ES" ? "TECNOLOGIAS:" : "TECHNOLOGIES:"}</h3>
           <div className={s.flexDivTechnologiesProjects}>
             {props.technologies.map((T: string, i: number) => (
               <div key={i}>
