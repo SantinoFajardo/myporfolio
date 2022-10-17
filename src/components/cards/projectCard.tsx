@@ -3,6 +3,7 @@ import { PROJECT } from "../../utils/interfaces";
 import s from "../../styles/projectCard.module.css";
 import { BsGithub } from "react-icons/bs";
 import Cookies from "universal-cookie";
+import Image from "next/image";
 
 const ProjectCard: any = ({ props }: PROJECT) => {
   const Cookie = new Cookies();
@@ -39,7 +40,7 @@ const ProjectCard: any = ({ props }: PROJECT) => {
               <source src={props.video} type="video/mp4" />
             </video>
           ) : (
-            <img
+            <Image
               className={s.videoProject}
               width={"100%"}
               src={props.image}
@@ -55,7 +56,7 @@ const ProjectCard: any = ({ props }: PROJECT) => {
           <div className={s.flexDivTechnologiesProjects}>
             {props.technologies.map((T: string, i: number) => (
               <div key={i}>
-                <img className={s.techImg} src={T} alt="" />
+                <Image className={s.techImg} src={T} alt="" />
               </div>
             ))}
           </div>

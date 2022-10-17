@@ -22,6 +22,7 @@ import { RiMusicFill } from "react-icons/ri";
 import Cookies from "universal-cookie";
 import { useRouter } from "next/router";
 import traductionOfNav from "../../lenguajes/navBar";
+import Image from "next/image";
 
 const flags = {
   britain: "https://bioxtend.com/wp-content/uploads/2020/07/flag6.png",
@@ -106,11 +107,11 @@ export default function Nav() {
                   bg="transparent"
                   _hover={{ bg: "transparent" }}
                 >
-                  <img
+                  <Image
                     height={"30px"}
                     width={"30px"}
                     src={lenguajeofPage == "ES" ? flags.spain : flags.britain}
-                  ></img>
+                  />
                 </Button>
                 <Button
                   fontSize={"2xl"}

@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Cookies from "universal-cookie";
 import s from "../styles/contact.module.css";
@@ -17,7 +18,7 @@ const Contact: NextPage = () => {
         {iconsContact.map((IC: CONTACT, i: number) => (
           <Link key={i} href={IC.link} passHref>
             <a target={"_blank"}>
-              <img width={"100px"} key={i} src={IC.icon} alt="" />
+              <Image width={"100px"} key={i} src={IC.icon} alt="" />
             </a>
           </Link>
         ))}

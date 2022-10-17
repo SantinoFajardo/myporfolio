@@ -3,6 +3,7 @@ import s from "../styles/skills.module.css";
 import skillsTraduction from "../lenguajes/skills";
 import Cookies from "universal-cookie";
 import technologiesLink from "../utils/technologiesIcons";
+import Image from "next/image";
 
 const Skills: NextPage = () => {
   const Cookie = new Cookies();
@@ -24,7 +25,7 @@ const Skills: NextPage = () => {
           </h2>
           <div className={s.divIconsFront}>
             {technologiesLink.Front.map((FL: string, i: number) => (
-              <img key={i} src={FL} width="70px" height="70px" alt="" />
+              <Image key={i} src={FL} width="70px" height="70px" alt="" />
             ))}
           </div>
         </div>
@@ -32,7 +33,7 @@ const Skills: NextPage = () => {
           <h2 className={s.titleOfTechnologieType}>BACKEND</h2>
           <div className={s.divIconsFront}>
             {technologiesLink.Back.map((FL: string, i: number) => (
-              <img key={i} src={FL} width="70px" height="70px" alt="" />
+              <Image key={i} src={FL} width="70px" height="70px" alt="" />
             ))}
           </div>
         </div>
@@ -44,7 +45,7 @@ const Skills: NextPage = () => {
           </h2>
           <div className={s.divIconsFront}>
             {technologiesLink.DataBases.map((FL: string, i: number) => (
-              <img key={i} src={FL} width="70px" height="70px" alt="" />
+              <Image key={i} src={FL} width="70px" height="70px" alt="" />
             ))}
           </div>
         </div>
@@ -56,7 +57,7 @@ const Skills: NextPage = () => {
           </h2>
           <div className={s.divIconsFront}>
             {technologiesLink.Others.map((FL: string, i: number) => (
-              <img key={i} src={FL} width="70px" height="70px" alt="" />
+              <Image key={i} src={FL} width="70px" height="70px" alt="" />
             ))}
           </div>
         </div>
