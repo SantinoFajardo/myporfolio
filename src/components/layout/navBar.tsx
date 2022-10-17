@@ -87,7 +87,6 @@ export default function Nav() {
                 <a href="#projects">
                   <MenuItem _hover={{ bg: "#3E3D3D" }}>Projects</MenuItem>
                 </a>
-                <MenuItem _hover={{ bg: "#3E3D3D" }}>Experience</MenuItem>
                 <a href="#contactMe">
                   <MenuItem _hover={{ bg: "#3E3D3D" }}>Contact me</MenuItem>
                 </a>
