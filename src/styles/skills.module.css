@@ -43,6 +43,12 @@
   opacity: 1;
 }
 
+@media screen and (max-width: 500px) {
+  .divIconsFront img {
+    opacity: 1;
+  }
+}
+
 .vline {
   border-left: 3px solid #e42929;
   height: 480px;
