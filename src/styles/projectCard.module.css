@@ -87,10 +87,17 @@
   }
 }
 
-.flexDivTechnologiesProjects img {
+.techImg {
   opacity: 0.3;
-  margin: 10px;
   transition: translateY, 0.5s;
+  width: 40px;
+}
+
+@media screen and (max-width: 520px) {
+  .techImg {
+    opacity: 1;
+    width: 100px;
+  }
 }
 
 .flexDivTechnologiesProjects img:hover {
@@ -107,6 +114,19 @@
 
 .divRight h3 {
   font-size: 1.5em;
+}
+
+@media screen and (max-width: 1107px) {
+  .divRight h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .divRight h3 {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 966px) {

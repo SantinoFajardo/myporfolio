@@ -1,0 +1,11 @@
+.contactContainer {
+  text-align: center;
+  /* background-color: red; */
+  /* height: 500px; */
+  font-family: monospace;
+}
+
+.contactTitle {
+  margin-top: 30px;
+  font-size: 2.8em;
+}

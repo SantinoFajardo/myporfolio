@@ -7,7 +7,7 @@ import projects from "../utils/projects";
 import Cookies from "universal-cookie";
 import ProjectCard from "./cards/projectCard";
 import { PROJECT } from "../utils/interfaces/interfaces";
-import "../styles/projectCard.module.css";
+import s from "../styles/projectCard.module.css";
 
 const settings = {
   dots: true,
@@ -21,7 +21,7 @@ const SimpleSlider: NextPage = () => {
   const Cookie = new Cookies();
   let lenguajeofPage: string = Cookie.get("Lenguaje");
   return (
-    <div>
+    <div className={s.carrouselDiv}>
       <Slider {...settings}>
         {projects.map((p: PROJECT, i: number) => (
           <div key={i}>
