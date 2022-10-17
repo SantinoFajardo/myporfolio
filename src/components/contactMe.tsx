@@ -15,7 +15,7 @@ const Contact: NextPage = () => {
       </h1>
       <div className={s.flexDivContact}>
         {iconsContact.map((IC: CONTACT, i: number) => (
-          <Link href={IC.link} passHref>
+          <Link key={i} href={IC.link} passHref>
             <a target={"_blank"}>
               <img width={"100px"} key={i} src={IC.icon} alt="" />
             </a>
