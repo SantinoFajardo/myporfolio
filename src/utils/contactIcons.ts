@@ -18,7 +18,7 @@ const gitHub: CONTACT = {
 
 const gmail: CONTACT = {
   icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/245px-Gmail_icon_%282020%29.svg.png",
-  link: "",
+  link: "mailto:santinofajardo02@gmail.com",
 };
 
 const iconsContact: CONTACT[] = [whatsapp, linkedin, gitHub, gmail];
