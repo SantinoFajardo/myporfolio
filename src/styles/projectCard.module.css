@@ -64,7 +64,7 @@
 
   .divRight {
     background-color: green;
-    width: 100%;
+    width: 100vw;
     margin-left: -10px;
     display: block;
   }
@@ -75,9 +75,9 @@
     flex-wrap: wrap;
   }
 
-  .description {
+  /* .description {
     background-color: yellow;
-  }
+  } */
   .videoProject {
     width: 100%;
   }
@@ -100,7 +100,7 @@
 
 .divRight {
   margin-left: 10px;
-  width: 50%;
+  /* width: 50%; */
   margin-top: 20px;
   display: grid;
   place-items: center;
