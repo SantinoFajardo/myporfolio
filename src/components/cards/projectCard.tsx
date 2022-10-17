@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PROJECT } from "../../utils/interfaces/interfaces";
+import { PROJECT } from "../../utils/interfaces";
 import s from "../../styles/projectCard.module.css";
 import { BsGithub } from "react-icons/bs";
 import Cookies from "universal-cookie";

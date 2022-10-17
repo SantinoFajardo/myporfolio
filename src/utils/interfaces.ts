@@ -28,3 +28,8 @@ export type PROJECT = {
   repository: string;
   props?: any;
 };
+
+export type CONTACT = {
+  icon: string;
+  link: string;
+};
