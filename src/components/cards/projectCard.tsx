@@ -8,19 +8,21 @@ const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
     <div className={s.divCard}>
       <div className={s.head}>
         <h1 className={s.title}>{props.title}</h1>
+      </div>
+      <div className={s.divDeployRepo}>
+        {props.deploy && (
+          <Link href={props.deploy} passHref>
+            <a target={"_blank"}>
+              <button className={s.buttonDeploy}>DEPLOY</button>
+            </a>
+          </Link>
+        )}
         <Link href={props.repository} passHref>
           <a target={"_blank"}>
             <BsGithub className={s.gitHubIcon} fontSize={"50px"} />
           </a>
         </Link>
       </div>
-      {props.deploy && (
-        <Link href={props.deploy} passHref>
-          <a target={"_blank"}>
-            <button className={s.buttonDeploy}>DEPLOY</button>
-          </a>
-        </Link>
-      )}
       <div className={s.leftRightDiv}>
         <div className={s.divLeft}>
           {props.video ? (
