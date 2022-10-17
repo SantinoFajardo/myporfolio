@@ -19,13 +19,7 @@ const Contact: NextPage = () => {
           <div className={s.iconContact} key={i}>
             <Link href={IC.link} passHref>
               <a target={"_blank"}>
-                <img
-                  width={"100px"}
-                  height="100px"
-                  key={i}
-                  src={IC.icon}
-                  alt=""
-                />
+                <img width={"100em"} key={i} src={IC.icon} alt="" />
               </a>
             </Link>
           </div>
