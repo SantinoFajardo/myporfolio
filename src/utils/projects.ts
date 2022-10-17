@@ -3,9 +3,9 @@ import technologiesLink from "./technologiesIcons";
 
 const PF: PROJECT = {
   title: "World Travelers",
-  image:
-    "https://res.cloudinary.com/santino/video/upload/v1665663044/worldTravelers/videolandingpagecrop_jlaq6g.mp4",
-  video: "",
+  image: "",
+  video:
+    "https://res.cloudinary.com/santino/video/upload/v1665964427/worldTravelers/World_Travelers_video_hwpn3b.mp4",
   descriptionES:
     "En este proyecto buscamos crear una comunidad de viajeros, donde un usuario puediera registrarse, crear viajes, unirse a viajes, pagar viajes, dar feedbacks a las actividades en las que estuvo presente y poder comunicarse a traves de un chat con otros viajeros. Como usuario adminisitrador, puede modificar viajes, crear actividades turisticas y modificar los comentarios y perfiles de los usuariso",
   descriptionEN:
