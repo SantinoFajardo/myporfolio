@@ -46,8 +46,8 @@ const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
           <p className={s.description}>{props.descriptionEN}</p>
           <h3>TECHNOLOGIES:</h3>
           <div className={s.flexDivTechnologiesProjects}>
-            {props.technologies.map((T: string) => (
-              <div>
+            {props.technologies.map((T: string, i: number) => (
+              <div key={i}>
                 <img width={"40px"} src={T} alt="" />
               </div>
             ))}

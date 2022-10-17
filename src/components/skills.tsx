@@ -23,16 +23,16 @@ const Skills: NextPage = () => {
               : skillsTraduction.front.EN}
           </h2>
           <div className={s.divIconsFront}>
-            {technologiesLink.Front.map((FL: string) => (
-              <img src={FL} width="70px" height="70px" alt="" />
+            {technologiesLink.Front.map((FL: string, i: number) => (
+              <img key={i} src={FL} width="70px" height="70px" alt="" />
             ))}
           </div>
         </div>
         <div className={s.flexDivSkills}>
           <h2 className={s.titleOfTechnologieType}>BACKEND</h2>
           <div className={s.divIconsFront}>
-            {technologiesLink.Back.map((FL: string) => (
-              <img src={FL} width="70px" height="70px" alt="" />
+            {technologiesLink.Back.map((FL: string, i: number) => (
+              <img key={i} src={FL} width="70px" height="70px" alt="" />
             ))}
           </div>
         </div>
@@ -43,8 +43,8 @@ const Skills: NextPage = () => {
               : skillsTraduction.dataBases.EN}
           </h2>
           <div className={s.divIconsFront}>
-            {technologiesLink.DataBases.map((FL: string) => (
-              <img src={FL} width="70px" height="70px" alt="" />
+            {technologiesLink.DataBases.map((FL: string, i: number) => (
+              <img key={i} src={FL} width="70px" height="70px" alt="" />
             ))}
           </div>
         </div>
@@ -55,8 +55,8 @@ const Skills: NextPage = () => {
               : skillsTraduction.others.EN}
           </h2>
           <div className={s.divIconsFront}>
-            {technologiesLink.Others.map((FL: string) => (
-              <img src={FL} width="70px" height="70px" alt="" />
+            {technologiesLink.Others.map((FL: string, i: number) => (
+              <img key={i} src={FL} width="70px" height="70px" alt="" />
             ))}
           </div>
         </div>

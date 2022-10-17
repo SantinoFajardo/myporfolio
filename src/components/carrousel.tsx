@@ -23,8 +23,8 @@ const SimpleSlider: NextPage = () => {
   return (
     <div>
       <Slider {...settings}>
-        {projects.map((p: PROJECT) => (
-          <div>
+        {projects.map((p: PROJECT, i: number) => (
+          <div key={i}>
             <ProjectCard props={p} lenguageOfPage={lenguajeofPage} />
           </div>
         ))}
