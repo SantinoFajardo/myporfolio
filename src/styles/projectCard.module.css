@@ -54,6 +54,7 @@
 .flexDivTechnologiesProjects {
   display: flex;
   justify-content: center;
+  margin-top: -40px;
 }
 
 .leftRightDiv {
@@ -102,6 +103,10 @@
   margin-top: 20px;
   display: grid;
   place-items: center;
+}
+
+.divRight h3 {
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 966px) {
