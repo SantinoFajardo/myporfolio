@@ -78,17 +78,19 @@ export default function Nav() {
                 <HamburgerIcon fontSize={"25px"} />
               </MenuButton>
               <MenuList alignItems={"center"} bg="#101010">
-                <MenuItem>
-                  <a href="#aboutMe">About me</a>
-                </MenuItem>
-                <MenuItem>
-                  <a href="#skills">Skills</a>
-                </MenuItem>
-                <MenuItem>
-                  <a href="#projects">Projects</a>
-                </MenuItem>
-                <MenuItem>Experience</MenuItem>
-                <MenuItem>Contact me</MenuItem>
+                <a href="#aboutMe">
+                  <MenuItem _hover={{ bg: "#3E3D3D" }}>About me</MenuItem>
+                </a>
+                <a href="#skills">
+                  <MenuItem _hover={{ bg: "#3E3D3D" }}>Skills</MenuItem>
+                </a>
+                <a href="#projects">
+                  <MenuItem _hover={{ bg: "#3E3D3D" }}>Projects</MenuItem>
+                </a>
+                <MenuItem _hover={{ bg: "#3E3D3D" }}>Experience</MenuItem>
+                <a href="#contactMe">
+                  <MenuItem _hover={{ bg: "#3E3D3D" }}>Contact me</MenuItem>
+                </a>
               </MenuList>
             </Menu>
             <Box

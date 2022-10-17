@@ -10,7 +10,7 @@ const Contact: NextPage = () => {
   const Cookie = new Cookies();
   let lenguageOfPage = Cookie.get("Lenguaje");
   return (
-    <div className={s.contactContainer}>
+    <div id="contactMe" className={s.contactContainer}>
       <h1 className={s.contactTitle}>
         {lenguageOfPage == "ES" ? "CONTACTAME" : "CONTACT ME"}
       </h1>
