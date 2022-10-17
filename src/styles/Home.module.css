@@ -101,6 +101,13 @@
   border-radius: 10px;
   width: 100px;
   margin-top: 10px;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+.buttonStart:hover {
+  background-color: white;
+  color: #af2626;
 }
 
 @media screen and (max-width: 340px) {
@@ -124,6 +131,13 @@
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 50px;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+.resumeButton:hover {
+  background-color: white;
+  color: #af2626;
 }
 
 .gitHubButton {
