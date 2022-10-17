@@ -84,7 +84,9 @@ export default function Nav() {
                 <MenuItem>
                   <a href="#skills">Skills</a>
                 </MenuItem>
-                <MenuItem>Projects</MenuItem>
+                <MenuItem>
+                  <a href="#projects">Projects</a>
+                </MenuItem>
                 <MenuItem>Experience</MenuItem>
                 <MenuItem>Contact me</MenuItem>
               </MenuList>
