@@ -23,11 +23,16 @@ const ProjectCard: any = ({ props }: PROJECT, { lenguageOfPage }: any) => {
       )}
       <div>
         {props.video ? (
-          <video width={"40%"} autoPlay muted={"isMuted"}>
+          <video className={s.videoProject} width={"40%"} autoPlay>
             <source src={props.video} type="video/mp4" />
           </video>
         ) : (
-          <img width={"40%"} src={props.image} alt="" />
+          <img
+            className={s.imageProject}
+            width={"40%"}
+            src={props.image}
+            alt=""
+          />
         )}
       </div>
     </div>
