@@ -43,6 +43,7 @@ const ProjectCard: any = ({ props }: PROJECT) => {
             <Image
               className={s.videoProject}
               width={"100%"}
+              height="0"
               src={props.image}
               alt=""
             />
@@ -56,7 +57,13 @@ const ProjectCard: any = ({ props }: PROJECT) => {
           <div className={s.flexDivTechnologiesProjects}>
             {props.technologies.map((T: string, i: number) => (
               <div key={i}>
-                <Image className={s.techImg} src={T} alt="" />
+                <Image
+                  width="40px"
+                  height={"40px"}
+                  className={s.techImg}
+                  src={T}
+                  alt=""
+                />
               </div>
             ))}
           </div>

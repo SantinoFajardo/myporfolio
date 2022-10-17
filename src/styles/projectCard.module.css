@@ -90,7 +90,6 @@
 .techImg {
   opacity: 0.3;
   transition: translateY, 0.5s;
-  width: 40px;
 }
 
 @media screen and (max-width: 520px) {

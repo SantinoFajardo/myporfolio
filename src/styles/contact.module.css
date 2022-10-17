@@ -1,6 +1,7 @@
 .contactContainer {
   text-align: center;
   font-family: monospace;
+  height: 300px;
 }
 
 .contactTitle {
@@ -21,4 +22,9 @@
 
 .flexDivContact img:hover {
   transform: translateY(-20px);
+}
+
+.iconContact {
+  height: 150px;
+  margin-left: 20px;
 }
