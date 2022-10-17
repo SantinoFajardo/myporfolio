@@ -30,8 +30,6 @@
   display: grid;
   place-items: center;
   width: 50%;
-  /* position: absolute; */
-  /* z-index: 1; */
 }
 
 .vline3 {
@@ -131,6 +129,7 @@
 .gitHubButton {
   padding: 5px;
   border-radius: 10px;
+  transition: 0.7s;
 }
 
 .gitHubButton:hover {
@@ -140,6 +139,7 @@
 .linkedinButton {
   padding: 8px;
   border-radius: 10px;
+  transition: 0.7s;
 }
 
 .linkedinButton:hover {
