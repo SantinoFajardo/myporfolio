@@ -1,4 +1,4 @@
-import { PROJECT } from "./interfaces/interfaces";
+import { PROJECT } from "./interfaces";
 import technologiesLink from "./technologiesIcons";
 
 const PF: PROJECT = {
@@ -29,7 +29,8 @@ const PF: PROJECT = {
 const PI: PROJECT = {
   title: "PI HENRY",
   image: "https://assets.soyhenry.com/LOGO-REDES-01_og.jpg",
-  video: "",
+  video:
+    "https://dms.licdn.com/playlist/C4D05AQH12T-498pevA/mp4-720p-30fp-crf28/0/1662421525584?e=1666630800&v=beta&t=Xsgls-GDWL-73p65Q5kkhpx0TH9png6bRjRVFZ6LcmI",
   descriptionES:
     "En este projecto individual, debia cumplir con los requisitos dados por Henry. Crear una SPA donde en ella haya filtros combinados, CSS PURO, formularios controlados y mezclar datos de una API externa con datos provenientes de la base de datos. Tampoco podia usar otra tecnologia que no sean las vistas debajo.",
   descriptionEN:
