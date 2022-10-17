@@ -9,3 +9,18 @@
   margin-top: 30px;
   font-size: 2.8em;
 }
+
+.flexDivContact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexDivContact img {
+  margin: 50px;
+  transition: 0.5s;
+}
+
+.flexDivContact img:hover {
+  transform: translateY(-20px);
+}
