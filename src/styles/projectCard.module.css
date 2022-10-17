@@ -106,3 +106,9 @@
   place-items: center;
   /* background-color: blue; */
 }
+
+@media screen and (min-width: 966px) {
+  .divRight {
+    width: 50%;
+  }
+}
