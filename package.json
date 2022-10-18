@@ -19,6 +19,7 @@
     "bootstrap": "^5.2.2",
     "effect": "^1.0.4",
     "framer-motion": "^6.5.1",
+    "howler": "^2.2.3",
     "next": "12.3.1",
     "prisma": "^4.4.0",
     "query": "^0.2.0",
