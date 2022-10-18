@@ -62,17 +62,17 @@ export default function Nav() {
         position={"sticky"}
         backgroundColor="transparent"
         backdropFilter="blur(10px)"
-        w="96.4vw"
+        w="100%"
         h={["70px", "70px", "70px", "70px"]}
         top={0}
         zIndex={10}
       >
         <Box
-          boxShadow={"1px 1px 1px 1px #1E1E1E"}
+          // boxShadow={"1px 1px 1px 1px white"}
           zIndex={100}
-          marginLeft={"-32px"}
-          width={"98.7vw"}
-          bg="black"
+          marginLeft={"-30px"}
+          width={"100vw"}
+          bg="transparent"
           px={{ base: 2, md: 7 }}
         >
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
