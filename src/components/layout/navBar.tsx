@@ -62,13 +62,13 @@ export default function Nav() {
         position={"sticky"}
         backgroundColor="transparent"
         backdropFilter="blur(10px)"
-        w="100%"
+        w="96.4vw"
         h={["70px", "70px", "70px", "70px"]}
         top={0}
         zIndex={10}
       >
         <Box
-          // boxShadow={"1px 1px 1px 1px white"}
+          boxShadow={"1px 1px 1px 1px white"}
           zIndex={100}
           marginLeft={"-30px"}
           width={"100vw"}
