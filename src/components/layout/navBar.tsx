@@ -16,11 +16,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
-import {
-  MdOutlineMusicOff,
-  MdConnectWithoutContact,
-  MdOutlineMusicNote,
-} from "react-icons/md";
+import { MdOutlineMusicOff, MdOutlineMusicNote } from "react-icons/md";
 import { RiMusicFill } from "react-icons/ri";
 import Cookies from "universal-cookie";
 import { useRouter } from "next/router";
@@ -48,13 +44,12 @@ export default function Nav() {
       "https://res.cloudinary.com/santino/video/upload/v1666126099/y2mate.com_-_Nina_Zilli_50mila_PES_2011_YouTube_kaya0l.mp3",
     ],
     html5: true,
-    volume: 0.01,
+    volume: 0.02,
     loop: false,
     autoplay: false,
   });
   const musicSound = () => {
     setMusic(music == false ? true : false);
-    console.log(sound);
   };
   const changeLenguaje = () => {
     setLenguaje(lenguaje == "ES" ? "EN" : "ES");
@@ -167,31 +162,20 @@ export default function Nav() {
                     src={lenguajeofPage == "ES" ? flags.spain : flags.britain}
                   />
                 </Button>
-                {music == false ? (
-                  <Button
-                    fontSize={"2xl"}
-                    color={"#C83333"}
-                    _hover={{
-                      bg: "transparent",
+                <Button
+                  fontSize={"2xl"}
+                  color={"#C83333"}
+                  _hover={{
+                    bg: "transparent",
+                  }}
+                  bg="transparent"
+                >
+                  <MdOutlineMusicNote
+                    onClick={() => {
+                      sound.playing() ? sound.pause() : sound.play();
                     }}
-                    bg="transparent"
-                    onClick={musicSound}
-                  >
-                    <MdOutlineMusicOff onClick={() => sound.play()} />
-                  </Button>
-                ) : (
-                  <Button
-                    fontSize={"2xl"}
-                    color={"#C83333"}
-                    _hover={{
-                      bg: "transparent",
-                    }}
-                    bg="transparent"
-                    onClick={musicSound}
-                  >
-                    <MdOutlineMusicNote onClick={() => sound.pause()} />
-                  </Button>
-                )}
+                  />
+                </Button>
               </Stack>
             </Flex>
           </Flex>
