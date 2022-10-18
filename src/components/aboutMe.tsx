@@ -49,6 +49,7 @@ const AboutMe: NextPage = () => {
           </p>
         </div>
       </div>
+      <div id="skills"></div>
     </div>
   );
 };

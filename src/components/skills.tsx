@@ -8,7 +8,7 @@ const Skills: NextPage = () => {
   const Cookie = new Cookies();
   let lenguajeofPage: string = Cookie.get("Lenguaje");
   return (
-    <div id="skills" className={s.skillsDiv}>
+    <div className={s.skillsDiv}>
       <h1 className={s.skillsTitle}>
         {lenguajeofPage == "ES"
           ? skillsTraduction.title.ES
@@ -54,7 +54,7 @@ const Skills: NextPage = () => {
               ? skillsTraduction.others.ES
               : skillsTraduction.others.EN}
           </h2>
-          <div className={s.divIconsFront}>
+          <div id="projects" className={s.divIconsFront}>
             {technologiesLink.Others.map((FL: string, i: number) => (
               <img key={i} src={FL} width="70px" height="70px" alt="" />
             ))}
