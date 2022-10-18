@@ -133,6 +133,7 @@ export default function Nav() {
               textAlign="center"
               fontSize={{ base: "sm", sm: "xl" }}
               letterSpacing={{ base: 1, md: 7 }}
+              className={music == true ? s.musicOn : s.musicOff}
             >
               {lenguajeofPage == "ES"
                 ? traductionOfNav.title.ES
