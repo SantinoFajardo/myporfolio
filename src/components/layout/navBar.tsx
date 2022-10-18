@@ -24,6 +24,7 @@ import traductionOfNav from "../../lenguajes/navBar";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import s from "../../styles/Home.module.css";
+import { Howl, Howler } from "howler";
 
 const flags = {
   britain: "https://bioxtend.com/wp-content/uploads/2020/07/flag6.png",
@@ -37,8 +38,16 @@ export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   let [lenguaje, setLenguaje] = useState("ES");
   let [music, setMusic] = useState(false);
+  var sound = new Howl({
+    src: ["https://s19.aconvert.com/convert/p3r68-cdx67/c9rn7-je1dm.mp3"],
+    html5: true,
+    volume: 0.01,
+    loop: false,
+    autoplay: false,
+  });
   const musicSound = () => {
     setMusic(music == false ? true : false);
+    console.log(sound);
   };
   const changeLenguaje = () => {
     setLenguaje(lenguaje == "ES" ? "EN" : "ES");
@@ -142,17 +151,31 @@ export default function Nav() {
                     src={lenguajeofPage == "ES" ? flags.spain : flags.britain}
                   />
                 </Button>
-                <Button
-                  fontSize={"2xl"}
-                  color={"#C83333"}
-                  _hover={{
-                    bg: "transparent",
-                  }}
-                  bg="transparent"
-                  onClick={musicSound}
-                >
-                  {music == false ? <MdOutlineMusicOff /> : <RiMusicFill />}
-                </Button>
+                {music == false ? (
+                  <Button
+                    fontSize={"2xl"}
+                    color={"#C83333"}
+                    _hover={{
+                      bg: "transparent",
+                    }}
+                    bg="transparent"
+                    onClick={musicSound}
+                  >
+                    <MdOutlineMusicOff onClick={() => sound.play()} />
+                  </Button>
+                ) : (
+                  <Button
+                    fontSize={"2xl"}
+                    color={"#C83333"}
+                    _hover={{
+                      bg: "transparent",
+                    }}
+                    bg="transparent"
+                    onClick={musicSound}
+                  >
+                    <RiMusicFill onClick={() => sound.pause()} />
+                  </Button>
+                )}
               </Stack>
             </Flex>
           </Flex>
