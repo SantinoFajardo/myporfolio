@@ -26,14 +26,8 @@ const Skills: NextPage = () => {
           </h2>
           <div className={s.divIconsFront}>
             {technologiesLink.Front.map((FL: TECHNOLOGIE, i: number) => (
-              <Tooltip hasArrow label={`${FL.name}`}>
-                <img
-                  key={i}
-                  src={FL.icon}
-                  width="70px"
-                  height="70px"
-                  alt={FL.name}
-                />
+              <Tooltip key={i} hasArrow label={`${FL.name}`}>
+                <img src={FL.icon} width="70px" height="70px" alt={FL.name} />
               </Tooltip>
             ))}
           </div>
@@ -42,14 +36,8 @@ const Skills: NextPage = () => {
           <h2 className={s.titleOfTechnologieType}>BACKEND</h2>
           <div className={s.divIconsFront}>
             {technologiesLink.Back.map((FL: TECHNOLOGIE, i: number) => (
-              <Tooltip hasArrow label={`${FL.name}`}>
-                <img
-                  key={i}
-                  src={FL.icon}
-                  width="70px"
-                  height="70px"
-                  alt={FL.name}
-                />
+              <Tooltip key={i} hasArrow label={`${FL.name}`}>
+                <img src={FL.icon} width="70px" height="70px" alt={FL.name} />
               </Tooltip>
             ))}
           </div>
@@ -62,14 +50,8 @@ const Skills: NextPage = () => {
           </h2>
           <div className={s.divIconsFront}>
             {technologiesLink.DataBases.map((FL: TECHNOLOGIE, i: number) => (
-              <Tooltip hasArrow label={`${FL.name}`}>
-                <img
-                  key={i}
-                  src={FL.icon}
-                  width="70px"
-                  height="70px"
-                  alt={FL.name}
-                />
+              <Tooltip key={i} hasArrow label={`${FL.name}`}>
+                <img src={FL.icon} width="70px" height="70px" alt={FL.name} />
               </Tooltip>
             ))}
           </div>
@@ -82,14 +64,8 @@ const Skills: NextPage = () => {
           </h2>
           <div id="projects" className={s.divIconsFront}>
             {technologiesLink.Others.map((FL: TECHNOLOGIE, i: number) => (
-              <Tooltip hasArrow label={`${FL.name}`}>
-                <img
-                  key={i}
-                  src={FL.icon}
-                  width="70px"
-                  height="70px"
-                  alt={FL.name}
-                />
+              <Tooltip key={i} hasArrow label={`${FL.name}`}>
+                <img src={FL.icon} width="70px" height="70px" alt={FL.name} />
               </Tooltip>
             ))}
           </div>
