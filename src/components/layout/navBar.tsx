@@ -16,7 +16,11 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
-import { MdOutlineMusicOff, MdConnectWithoutContact } from "react-icons/md";
+import {
+  MdOutlineMusicOff,
+  MdConnectWithoutContact,
+  MdOutlineMusicNote,
+} from "react-icons/md";
 import { RiMusicFill } from "react-icons/ri";
 import Cookies from "universal-cookie";
 import { useRouter } from "next/router";
@@ -27,9 +31,9 @@ import s from "../../styles/Home.module.css";
 import { Howl, Howler } from "howler";
 
 const flags = {
-  britain: "https://bioxtend.com/wp-content/uploads/2020/07/flag6.png",
-  spain:
-    "https://es.seaicons.com/wp-content/uploads/2015/10/Spain-Flag-icon.png",
+  britain:
+    "https://files.softicons.com/download/internet-cons/world-flags-orbs-icons-by-vathanx/png/256/Flag%20of%20United%20Kingdom.png",
+  spain: "https://aux.iconspalace.com/uploads/1489554547.png",
 };
 
 export default function Nav() {
@@ -174,7 +178,7 @@ export default function Nav() {
                     bg="transparent"
                     onClick={musicSound}
                   >
-                    <RiMusicFill onClick={() => sound.pause()} />
+                    <MdOutlineMusicNote onClick={() => sound.pause()} />
                   </Button>
                 )}
               </Stack>

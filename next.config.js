@@ -20,6 +20,8 @@ const nextConfig = {
       "cdn-icons-png.flaticon.com",
       "upload.wikimedia.org",
       "es.seaicons.com",
+      "aux.iconspalace.com",
+      "files.softicons.com",
     ],
   },
 };

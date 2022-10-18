@@ -160,23 +160,12 @@
   background-color: #af2626;
 }
 
-/* @import url(https://fonts.googleapis.com/css?family=Varela+Round); */
-
-/* body {
-  background: hsla(0, 0%, 0%, 0.9);
-} */
-
 .musicOn {
-  /* background-color: red; */
   color: hsla(0, 0%, 0%, 0.9);
   font: normal 140px Varela Round, sans-serif;
-  /* height: 140px; */
-  left: 0;
   letter-spacing: 5px;
   text-align: center;
-  text-transform: uppercase;
-  top: 50%;
-  width: 100%;
+  margin-left: 15px;
   animation: move linear 2000ms infinite;
 }
 
