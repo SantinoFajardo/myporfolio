@@ -15,7 +15,7 @@ const linkedin: CONTACT = {
 
 const gitHub: CONTACT = {
   data: "@SantinoFajardo",
-  icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+  icon: "https://jarroba.com/wp-content/uploads/2014/01/gitHub.png",
   link: links.myGitHubLink,
 };
 
