@@ -34,3 +34,8 @@ export type CONTACT = {
   icon: string;
   link: string;
 };
+
+export type TECHNOLOGIE = {
+  name: string;
+  icon: string;
+};

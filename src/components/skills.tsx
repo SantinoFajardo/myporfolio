@@ -3,6 +3,8 @@ import s from "../styles/skills.module.css";
 import skillsTraduction from "../lenguajes/skills";
 import Cookies from "universal-cookie";
 import technologiesLink from "../utils/technologiesIcons";
+import { TECHNOLOGIE } from "../utils/interfaces";
+import { flatten, Tooltip } from "@chakra-ui/react";
 
 const Skills: NextPage = () => {
   const Cookie = new Cookies();
@@ -23,8 +25,16 @@ const Skills: NextPage = () => {
               : skillsTraduction.front.EN}
           </h2>
           <div className={s.divIconsFront}>
-            {technologiesLink.Front.map((FL: string, i: number) => (
-              <img key={i} src={FL} width="70px" height="70px" alt="" />
+            {technologiesLink.Front.map((FL: TECHNOLOGIE, i: number) => (
+              <Tooltip hasArrow label={`${FL.name}`}>
+                <img
+                  key={i}
+                  src={FL.icon}
+                  width="70px"
+                  height="70px"
+                  alt={FL.name}
+                />
+              </Tooltip>
             ))}
           </div>
         </div>

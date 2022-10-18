@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PROJECT } from "../../utils/interfaces";
+import { PROJECT, TECHNOLOGIE } from "../../utils/interfaces";
 import s from "../../styles/projectCard.module.css";
 import { BsGithub } from "react-icons/bs";
 import Cookies from "universal-cookie";
@@ -55,14 +55,14 @@ const ProjectCard: any = ({ props }: PROJECT) => {
           </p>
           <h3>{lenguageOfPage == "ES" ? "TECNOLOGIAS:" : "TECHNOLOGIES:"}</h3>
           <div className={s.flexDivTechnologiesProjects}>
-            {props.technologies.map((T: string, i: number) => (
+            {props.technologies.map((T: TECHNOLOGIE, i: number) => (
               <div key={i}>
                 <img
                   width="40px"
                   height={"40px"}
                   className={s.techImg}
-                  src={T}
-                  alt=""
+                  src={T.icon}
+                  alt={T.name}
                 />
               </div>
             ))}
