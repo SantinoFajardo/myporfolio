@@ -29,6 +29,7 @@ import Image from "next/image";
 import { Link } from "react-scroll";
 import s from "../../styles/Home.module.css";
 import { Howl, Howler } from "howler";
+// import {as a} from "../../utils/song/song.mp3";
 
 const flags = {
   britain:
@@ -43,7 +44,9 @@ export default function Nav() {
   let [lenguaje, setLenguaje] = useState("ES");
   let [music, setMusic] = useState(false);
   var sound = new Howl({
-    src: ["https://s17.aconvert.com/convert/p3r68-cdx67/4ikdf-vtd8n.mp3"],
+    src: [
+      "https://res.cloudinary.com/santino/video/upload/v1666126099/y2mate.com_-_Nina_Zilli_50mila_PES_2011_YouTube_kaya0l.mp3",
+    ],
     html5: true,
     volume: 0.01,
     loop: false,
