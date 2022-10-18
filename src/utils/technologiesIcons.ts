@@ -32,27 +32,56 @@ const next: TECHNOLOGIE = {
   name: "Next.js",
   icon: "https://ui-lib.com/blog/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png",
 };
+const node: TECHNOLOGIE = {
+  name: "Node.js",
+  icon: "https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png",
+};
+const express: TECHNOLOGIE = {
+  name: "Express",
+  icon: "https://www.mementotech.in/assets/images/icons/express.png",
+};
+const sql: TECHNOLOGIE = {
+  name: "SQL Server",
+  icon: "https://cdn-icons-png.flaticon.com/512/2721/2721297.png",
+};
+const postgresql: TECHNOLOGIE = {
+  name: "PostgreSQL",
+  icon: "https://cdn.iconscout.com/icon/free/png-256/postgresql-226047.png",
+};
+const sequelize: TECHNOLOGIE = {
+  name: "Sequelize ORM",
+  icon: "https://cdn.iconscout.com/icon/free/png-256/sequelize-2-1175003.png",
+};
+const prisma: TECHNOLOGIE = {
+  name: "Prisma ORM",
+  icon: "https://res.cloudinary.com/spantree-technology-group/image/upload/c_scale,w_256/v1644258944/spantree.net/tool_icons/prisma_ax9pfb.png",
+};
+const vercel: TECHNOLOGIE = {
+  name: "Vercel",
+  icon: "https://www.jorgeagoiz.es/favicon.ico",
+};
+const npm: TECHNOLOGIE = {
+  name: "NPM",
+  icon: "https://cdn.iconscout.com/icon/free/png-256/npm-3-1175132.png",
+};
+const figma: TECHNOLOGIE = {
+  name: "Figma",
+  icon: "https://cdn.iconscout.com/icon/free/png-256/figma-3521426-2944870.png",
+};
+const jira: TECHNOLOGIE = {
+  name: "Jira",
+  icon: "https://cdn.iconscout.com/icon/free/png-256/jira-3628861-3030001.png",
+};
+const postman: TECHNOLOGIE = {
+  name: "Postman",
+  icon: "https://www.svgrepo.com/show/354202/postman-icon.svg",
+};
 
 const technologiesLink = {
   Front: [html, css, js, ts, react, reactQuery, redux, next],
-  Back: [
-    "https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png", //NODE
-    "https://www.mementotech.in/assets/images/icons/express.png", //EXPRESS
-    "https://ui-lib.com/blog/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png", //NEXT
-    "https://cdn.iconscout.com/icon/free/png-256/typescript-1174965.png", //TS
-  ],
-  DataBases: [
-    "https://cdn.iconscout.com/icon/free/png-256/postgresql-226047.png", //POSTGRESQL
-    "https://cdn.iconscout.com/icon/free/png-256/sequelize-2-1175003.png", //SEQUELIZE
-    "https://res.cloudinary.com/spantree-technology-group/image/upload/c_scale,w_256/v1644258944/spantree.net/tool_icons/prisma_ax9pfb.png", //PRISMA
-  ],
-  Others: [
-    "https://www.jorgeagoiz.es/favicon.ico", //VERCEL
-    "https://cdn.iconscout.com/icon/free/png-256/npm-3-1175132.png", //NPM
-    "https://cdn.iconscout.com/icon/free/png-256/figma-3521426-2944870.png", //FIGMA
-    "https://cdn.iconscout.com/icon/free/png-256/jira-3628861-3030001.png", //JIRA
-    "https://www.svgrepo.com/show/354202/postman-icon.svg", //POSTMAN
-  ],
+  Back: [node, express, next, ts],
+  DataBases: [sql, postgresql, sequelize, prisma],
+  Others: [vercel, npm, figma, jira, postman],
 };
 
 export default technologiesLink;

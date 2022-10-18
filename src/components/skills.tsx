@@ -41,8 +41,16 @@ const Skills: NextPage = () => {
         <div className={s.flexDivSkills}>
           <h2 className={s.titleOfTechnologieType}>BACKEND</h2>
           <div className={s.divIconsFront}>
-            {technologiesLink.Back.map((FL: string, i: number) => (
-              <img key={i} src={FL} width="70px" height="70px" alt="" />
+            {technologiesLink.Back.map((FL: TECHNOLOGIE, i: number) => (
+              <Tooltip hasArrow label={`${FL.name}`}>
+                <img
+                  key={i}
+                  src={FL.icon}
+                  width="70px"
+                  height="70px"
+                  alt={FL.name}
+                />
+              </Tooltip>
             ))}
           </div>
         </div>
@@ -53,8 +61,16 @@ const Skills: NextPage = () => {
               : skillsTraduction.dataBases.EN}
           </h2>
           <div className={s.divIconsFront}>
-            {technologiesLink.DataBases.map((FL: string, i: number) => (
-              <img key={i} src={FL} width="70px" height="70px" alt="" />
+            {technologiesLink.DataBases.map((FL: TECHNOLOGIE, i: number) => (
+              <Tooltip hasArrow label={`${FL.name}`}>
+                <img
+                  key={i}
+                  src={FL.icon}
+                  width="70px"
+                  height="70px"
+                  alt={FL.name}
+                />
+              </Tooltip>
             ))}
           </div>
         </div>
@@ -65,8 +81,16 @@ const Skills: NextPage = () => {
               : skillsTraduction.others.EN}
           </h2>
           <div id="projects" className={s.divIconsFront}>
-            {technologiesLink.Others.map((FL: string, i: number) => (
-              <img key={i} src={FL} width="70px" height="70px" alt="" />
+            {technologiesLink.Others.map((FL: TECHNOLOGIE, i: number) => (
+              <Tooltip hasArrow label={`${FL.name}`}>
+                <img
+                  key={i}
+                  src={FL.icon}
+                  width="70px"
+                  height="70px"
+                  alt={FL.name}
+                />
+              </Tooltip>
             ))}
           </div>
         </div>
