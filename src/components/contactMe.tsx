@@ -5,6 +5,7 @@ import Cookies from "universal-cookie";
 import s from "../styles/contact.module.css";
 import iconsContact from "../utils/contactIcons";
 import { CONTACT } from "../utils/interfaces";
+import { Tooltip } from "@chakra-ui/react";
 
 const Contact: NextPage = () => {
   const Cookie = new Cookies();
@@ -19,7 +20,9 @@ const Contact: NextPage = () => {
           <div className={s.iconContact} key={i}>
             <Link href={IC.link} passHref>
               <a target={"_blank"}>
-                <img width={"100em"} key={i} src={IC.icon} alt="" />
+                <Tooltip hasArrow label={`${IC.data}`}>
+                  <img width={"100em"} key={i} src={IC.icon} alt="" />
+                </Tooltip>
               </a>
             </Link>
           </div>

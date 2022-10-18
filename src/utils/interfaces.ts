@@ -30,6 +30,7 @@ export type PROJECT = {
 };
 
 export type CONTACT = {
+  data: string;
   icon: string;
   link: string;
 };
