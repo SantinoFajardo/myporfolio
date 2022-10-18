@@ -23,7 +23,7 @@ export type PROJECT = {
   descriptionES: string;
   descriptionEN: string;
   video?: string;
-  technologies: string[];
+  technologies: TECHNOLOGIE[];
   deploy?: string;
   repository: string;
   props?: any;

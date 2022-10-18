@@ -56,6 +56,14 @@ const prisma: TECHNOLOGIE = {
   name: "Prisma ORM",
   icon: "https://res.cloudinary.com/spantree-technology-group/image/upload/c_scale,w_256/v1644258944/spantree.net/tool_icons/prisma_ax9pfb.png",
 };
+const mongodb: TECHNOLOGIE = {
+  name: "MongoDB",
+  icon: "https://cdn.iconscout.com/icon/free/png-256/mongodb-5-1175140.png",
+};
+const mongoose: TECHNOLOGIE = {
+  name: "Mongoose ORM",
+  icon: "https://raw.githubusercontent.com/github/explore/master/topics/mongoose/mongoose.png",
+};
 const vercel: TECHNOLOGIE = {
   name: "Vercel",
   icon: "https://www.jorgeagoiz.es/favicon.ico",
@@ -80,8 +88,9 @@ const postman: TECHNOLOGIE = {
 const technologiesLink = {
   Front: [html, css, js, ts, react, reactQuery, redux, next],
   Back: [node, express, next, ts],
-  DataBases: [sql, postgresql, sequelize, prisma],
+  DataBases: [postgresql, sequelize, prisma, sql],
   Others: [vercel, npm, figma, jira, postman],
+  Used: [mongodb, mongoose],
 };
 
 export default technologiesLink;

@@ -4,6 +4,7 @@ import s from "../../styles/projectCard.module.css";
 import { BsGithub } from "react-icons/bs";
 import Cookies from "universal-cookie";
 import Image from "next/image";
+import { Tooltip } from "@chakra-ui/react";
 
 const ProjectCard: any = ({ props }: PROJECT) => {
   const Cookie = new Cookies();
@@ -57,13 +58,15 @@ const ProjectCard: any = ({ props }: PROJECT) => {
           <div className={s.flexDivTechnologiesProjects}>
             {props.technologies.map((T: TECHNOLOGIE, i: number) => (
               <div key={i}>
-                <img
-                  width="40px"
-                  height={"40px"}
-                  className={s.techImg}
-                  src={T.icon}
-                  alt={T.name}
-                />
+                <Tooltip hasArrow label={`${T.name}`}>
+                  <img
+                    width="40px"
+                    height={"40px"}
+                    className={s.techImg}
+                    src={T.icon}
+                    alt={T.name}
+                  />
+                </Tooltip>
               </div>
             ))}
           </div>
