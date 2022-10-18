@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   Avatar,
-  Link,
   Button,
   Menu,
   MenuButton,
@@ -23,6 +22,7 @@ import Cookies from "universal-cookie";
 import { useRouter } from "next/router";
 import traductionOfNav from "../../lenguajes/navBar";
 import Image from "next/image";
+import { Link } from "react-scroll";
 
 const flags = {
   britain: "https://bioxtend.com/wp-content/uploads/2020/07/flag6.png",
@@ -79,18 +79,46 @@ export default function Nav() {
               </MenuButton>
               <MenuList alignItems={"center"} bg="#101010">
                 <MenuItem display={"none"} />
-                <a href="#aboutMe">
+                <Link
+                  to="aboutMe"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   <MenuItem _hover={{ bg: "#3E3D3D" }}>About me</MenuItem>
-                </a>
-                <a href="#skills">
+                </Link>
+                <Link
+                  to="skills"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   <MenuItem _hover={{ bg: "#3E3D3D" }}>Skills</MenuItem>
-                </a>
-                <a href="#projects">
+                </Link>
+                <Link
+                  to="projects"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   <MenuItem _hover={{ bg: "#3E3D3D" }}>Projects</MenuItem>
-                </a>
-                <a href="#contactMe">
+                </Link>
+                <Link
+                  to="contactMe"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={50}
+                  duration={500}
+                >
                   <MenuItem _hover={{ bg: "#3E3D3D" }}>Contact me</MenuItem>
-                </a>
+                </Link>
               </MenuList>
             </Menu>
             <Box

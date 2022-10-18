@@ -15,7 +15,7 @@ import Skills from "../components/skills";
 import Projects from "../components/MyProjects";
 import { ScrollContainer, ScrollPage } from "react-scroll-motion";
 import Contact from "../components/contactMe";
-import meIcon from "../utils/iconBitmoji/bitmoji.png";
+import { Link as ScrollLink } from "react-scroll";
 
 const Home: NextPage = () => {
   const Cookie = new Cookies();
@@ -77,11 +77,18 @@ const Home: NextPage = () => {
         <div className={styles.vline3}></div>
         <div className={styles.divButtonStart}>
           <button className={styles.buttonStart}>
-            <a href="#aboutMe">
+            <ScrollLink
+              to="aboutMe"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
               {lenguajeofPage == "ES"
                 ? traductionOfLanding.buttonStart.ES
                 : traductionOfLanding.buttonStart.EN}
-            </a>
+            </ScrollLink>
           </button>
         </div>
         <div id="aboutMe" className={styles.vline4}></div>
