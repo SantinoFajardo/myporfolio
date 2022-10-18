@@ -78,6 +78,7 @@ export default function Nav() {
                 <HamburgerIcon fontSize={"25px"} />
               </MenuButton>
               <MenuList alignItems={"center"} bg="#101010">
+                <MenuItem display={"none"} />
                 <a href="#aboutMe">
                   <MenuItem _hover={{ bg: "#3E3D3D" }}>About me</MenuItem>
                 </a>
