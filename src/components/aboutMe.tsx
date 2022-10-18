@@ -37,8 +37,8 @@ const AboutMe: NextPage = () => {
             src="https://avatars.githubusercontent.com/u/106558763?v=4"
             alt=""
             className={s.secondImage}
-            width="400px"
-            height="200px"
+            width="500px"
+            height="300px"
           />
         </div>
         <div className={s.secondParagraphDiv}>
