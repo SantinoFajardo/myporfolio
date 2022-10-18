@@ -100,7 +100,9 @@ export default function Nav() {
                   offset={50}
                   duration={500}
                 >
-                  <MenuItem _hover={{ bg: "#3E3D3D" }}>About me</MenuItem>
+                  <MenuItem _hover={{ bg: "#3E3D3D" }}>
+                    {lenguajeofPage == "ES" ? "Sobre mi" : "About me"}
+                  </MenuItem>
                 </Link>
                 <Link
                   to="skills"
@@ -109,7 +111,9 @@ export default function Nav() {
                   offset={50}
                   duration={500}
                 >
-                  <MenuItem _hover={{ bg: "#3E3D3D" }}>Skills</MenuItem>
+                  <MenuItem _hover={{ bg: "#3E3D3D" }}>
+                    {lenguajeofPage == "ES" ? "Habilidades" : "Skills"}
+                  </MenuItem>
                 </Link>
                 <Link
                   to="projects"
@@ -118,7 +122,9 @@ export default function Nav() {
                   offset={50}
                   duration={500}
                 >
-                  <MenuItem _hover={{ bg: "#3E3D3D" }}>Projects</MenuItem>
+                  <MenuItem _hover={{ bg: "#3E3D3D" }}>
+                    {lenguajeofPage == "ES" ? "Proyectos" : "Projects"}
+                  </MenuItem>
                 </Link>
                 <Link
                   to="contactMe"
@@ -127,7 +133,9 @@ export default function Nav() {
                   offset={50}
                   duration={500}
                 >
-                  <MenuItem _hover={{ bg: "#3E3D3D" }}>Contact me</MenuItem>
+                  <MenuItem _hover={{ bg: "#3E3D3D" }}>
+                    {lenguajeofPage == "ES" ? "Contactame" : "Contact me"}
+                  </MenuItem>
                 </Link>
               </MenuList>
             </Menu>
