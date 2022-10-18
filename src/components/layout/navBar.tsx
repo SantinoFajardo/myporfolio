@@ -23,6 +23,7 @@ import { useRouter } from "next/router";
 import traductionOfNav from "../../lenguajes/navBar";
 import Image from "next/image";
 import { Link } from "react-scroll";
+import s from "../../styles/Home.module.css";
 
 const flags = {
   britain: "https://bioxtend.com/wp-content/uploads/2020/07/flag6.png",
@@ -81,7 +82,6 @@ export default function Nav() {
                 <MenuItem display={"none"} />
                 <Link
                   to="aboutMe"
-                  activeClass="active"
                   spy={true}
                   smooth={true}
                   offset={50}
@@ -91,7 +91,6 @@ export default function Nav() {
                 </Link>
                 <Link
                   to="skills"
-                  activeClass="active"
                   spy={true}
                   smooth={true}
                   offset={50}
@@ -101,7 +100,6 @@ export default function Nav() {
                 </Link>
                 <Link
                   to="projects"
-                  activeClass="active"
                   spy={true}
                   smooth={true}
                   offset={50}
@@ -111,7 +109,6 @@ export default function Nav() {
                 </Link>
                 <Link
                   to="contactMe"
-                  activeClass="active"
                   spy={true}
                   smooth={true}
                   offset={50}

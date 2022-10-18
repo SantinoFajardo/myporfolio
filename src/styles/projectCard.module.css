@@ -22,6 +22,7 @@
 .gitHubIcon {
   padding: 5px;
   border-radius: 10px;
+  transition: 0.7s;
 }
 
 .gitHubIcon:hover {
@@ -46,6 +47,13 @@
   border-radius: 10px;
   width: 100px;
   margin-top: 10px;
+  transition: 0.7s;
+  font-weight: 600;
+}
+
+.buttonDeploy:hover {
+  background-color: white;
+  color: #af2626;
 }
 
 .divLeft {
