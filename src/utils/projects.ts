@@ -5,10 +5,9 @@ const FAMETAL: PROJECT = {
   title: "Fametal SPA",
   image: "",
   video: "",
+  descriptionEN: "Lorem ipsum dolor sit amet,",
   descriptionES:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  descriptionEN:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Mi primer proyecto como freelance, diseñe una SPA donde el cliente necesitaba llevar su negocio a internet. Deploye la app en Vercel, y la base de datos en Supabase. Las imagenes estan almacenadas en cloudinary para su correcta carga y optimizacion de almacenamientos. Contiene una seccion de administrador donde este podra crear, modificar y borrar datos a su disposicion. El cliente tendra acceso a todas las demas pestañas donde podra ver informacion de la empresa.",
   technologies: [
     technologiesLink.Front[0],
     technologiesLink.Front[1],
