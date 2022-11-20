@@ -88,7 +88,7 @@ const postman: TECHNOLOGIE = {
 const technologiesLink = {
   Front: [html, css, js, ts, react, reactQuery, redux, next],
   Back: [node, express, next, ts],
-  DataBases: [postgresql, sequelize, prisma, sql],
+  DataBases: [postgresql, sequelize, prisma, sql, mongodb, mongoose],
   Others: [vercel, npm, figma, jira, postman],
   Used: [mongodb, mongoose],
 };

@@ -1,6 +1,31 @@
 import { PROJECT } from "./interfaces";
 import technologiesLink from "./technologiesIcons";
 
+const FAMETAL: PROJECT = {
+  title: "Fametal SPA",
+  image: "",
+  video: "",
+  descriptionES:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  descriptionEN:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  technologies: [
+    technologiesLink.Front[0],
+    technologiesLink.Front[1],
+    technologiesLink.Front[2],
+    technologiesLink.Front[3],
+    technologiesLink.Front[7],
+    technologiesLink.Back[0],
+    technologiesLink.Back[2],
+    technologiesLink.Back[3],
+    technologiesLink.DataBases[0],
+    technologiesLink.DataBases[2],
+    technologiesLink.DataBases[3],
+  ],
+  deploy: "https://fametal-five.vercel.app/",
+  repository: "https://github.com/SantinoFajardo/Fametal-SPA",
+};
+
 const PF: PROJECT = {
   title: "World Travelers",
   image: "",
@@ -51,6 +76,6 @@ const PI: PROJECT = {
   repository: "https://github.com/SantinoFajardo/Pi-VideoGames",
 };
 
-const projects: PROJECT[] = [PF, PI];
+const projects: PROJECT[] = [PF, PI, FAMETAL];
 
 export default projects;
